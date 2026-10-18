@@ -9,7 +9,7 @@
 	///How much energy we can have
 	var/max_dark_energy = 100
 	///Always be at our max_dark_energy
-	var/dark_energy_infinite = FALSE
+	var/dark_energy_infinite = TRUE
 	///How much energy we generate in the dark
 	var/energy_dark = 0.75
 	///How much energy we generate in the light

@@ -1,2 +1,2 @@
-#define MIN_INCORP_DELAY 0.8
+#define MIN_INCORP_DELAY 0.2
 #define MAX_INCORP_DELAY 5
