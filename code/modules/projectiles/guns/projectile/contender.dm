@@ -28,10 +28,11 @@
 	if(.)
 		return TRUE
 	if(chambered)
-		chambered.loc = get_turf(src)
+		// The casing may have already been pulled out by hand
+		if(chambered in loaded)
+			chambered.loc = get_turf(src)
+			loaded -= chambered
 		chambered = null
-		var/obj/item/ammo_casing/C = loaded[1]
-		loaded -= C
 
 	if(!retracted_bolt)
 		to_chat(user, span_notice("You cycle back the bolt on [src], ejecting the casing and allowing you to reload."))

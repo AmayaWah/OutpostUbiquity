@@ -20,8 +20,11 @@
 		light_range = PB.light_range
 	if(isnull(light_color_override) && !isnull(PB.light_color))
 		light_color_override = PB.light_color
-	if(light_range > 0 && light_intensity > 0)
-		var/list/turf/line = getline(starting.return_turf(), ending.return_turf())
+	var/turf/start_turf = starting.return_turf()
+	var/turf/end_turf = ending.return_turf()
+	// Points off the map edge have no turf
+	if(light_range > 0 && light_intensity > 0 && start_turf && end_turf)
+		var/list/turf/line = getline(start_turf, end_turf)
 		tracing_line:
 			for(var/turf/T as anything in line)
 				for(var/obj/effect/projectile_lighting/PL in T)

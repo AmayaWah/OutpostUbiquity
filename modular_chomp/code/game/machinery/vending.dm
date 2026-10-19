@@ -132,7 +132,7 @@
 					/obj/item/clothing/suit/armor/pcarrier = 8,
 					/obj/item/clothing/head/helmet = 8,
 				// Accessories
-					/obj/item/clothing/accessory/armor/tag/nt = 8,
+					/obj/item/clothing/accessory/armor/tag/pcrc = 8,
 					/obj/item/clothing/accessory/storage/pouches = 8,
 				// Armor fittings
 					/obj/item/clothing/accessory/armor/armguards/security = 8,
@@ -151,7 +151,7 @@
 					/obj/item/clothing/suit/armor/pcarrier = 6,
 					/obj/item/clothing/head/helmet = 6,
 				// Accessories
-					/obj/item/clothing/accessory/armor/tag/ntwhite = 6,
+					/obj/item/clothing/accessory/armor/tag/pcrc = 6,
 					/obj/item/clothing/accessory/storage/pouches/large = 6,
 					/obj/item/clothing/accessory/armor/helmcover/ntblack = 6,
 					/obj/item/clothing/accessory/armor/helmcover/nt = 6,
