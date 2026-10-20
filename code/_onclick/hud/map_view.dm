@@ -14,12 +14,15 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/map_view_tg)
 	// Weakrefs of all our viewers
 	var/list/datum/weakref/viewing_clients = list()
 	var/list/popup_plane_masters
+	// Weakrefs of TGUI windows we are waiting on to become visible
+	var/list/datum/weakref/pending_windows = list()
 
 /atom/movable/screen/map_view_tg/Destroy()
 	for(var/datum/weakref/client_ref in viewing_clients)
 		hide_from_client(client_ref.resolve())
 	QDEL_LIST_NULL(popup_plane_masters)
 	viewing_clients.Cut()
+	pending_windows.Cut()
 	return ..()
 
 /atom/movable/screen/map_view_tg/proc/generate_view(map_key)
@@ -50,7 +53,10 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/map_view_tg)
  */
 /atom/movable/screen/map_view_tg/proc/display_to(mob/show_to, datum/tgui_window/window)
 	if(window && !window.visible)
+		// Pooled windows can be reused before they ever became visible, so clear any stale registration
+		UnregisterSignal(window, COMSIG_TGUI_WINDOW_VISIBLE)
 		RegisterSignal(window, COMSIG_TGUI_WINDOW_VISIBLE, PROC_REF(display_on_ui_visible))
+		pending_windows |= WEAKREF(window)
 	else
 		display_to_client(show_to.client)
 
@@ -58,6 +64,7 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/map_view_tg)
 	SIGNAL_HANDLER
 	display_to_client(show_to)
 	UnregisterSignal(window, COMSIG_TGUI_WINDOW_VISIBLE)
+	pending_windows -= WEAKREF(window)
 
 /atom/movable/screen/map_view_tg/proc/display_to_client(client/show_to)
 	show_to.register_map_obj(src)
@@ -74,4 +81,12 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/map_view_tg)
 /atom/movable/screen/map_view_tg/proc/hide_from_client(client/hide_from)
 	if(!hide_from)
 		return
+	// The UI closed before its window became visible, stop waiting on it
+	for(var/datum/weakref/window_ref as anything in pending_windows)
+		var/datum/tgui_window/window = window_ref.resolve()
+		if(!window)
+			pending_windows -= window_ref
+		else if(window.client == hide_from)
+			UnregisterSignal(window, COMSIG_TGUI_WINDOW_VISIBLE)
+			pending_windows -= window_ref
 	hide_from.clear_map(assigned_map)
