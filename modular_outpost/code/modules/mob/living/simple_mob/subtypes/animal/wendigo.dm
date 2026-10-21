@@ -13,7 +13,7 @@
 	melee_damage_upper = 30
 	attacktext = list("slashed", "clawed")   // picks one at random each hit
 	speak_emote = list("screeches")         // "The my horror hisses."
-	movement_cooldown = 1                // higher = slower; lower = faster
+	movement_cooldown = 0                // higher = slower; lower = faster
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/wendigo
 
 
@@ -24,5 +24,5 @@
 /datum/ai_holder/simple_mob/melee/wendigo/give_target(new_target, urgent = FALSE)
 	. = ..()                             // do everything the normal AI does first
 	if(. && COOLDOWN_FINISHED(src, screech_cooldown))
-		playsound(holder, 'modular_outpost/sound/effects/wendigohowl.ogg', 75, TRUE)
+		playsound(holder, 'modular_outpost/sound/effects/wendigohowl.ogg', 100, TRUE)
 		COOLDOWN_START(src, screech_cooldown, 10 SECONDS)
