@@ -106,6 +106,7 @@
 	force = 5
 	max_grenades = 0
 	underslung = TRUE
+	mounted_gun = TRUE // Lives inside the rifle, not in a mob's hands
 
 //load and unload directly into chambered
 /obj/item/gun/launcher/grenade/underslung/load(obj/item/grenade/G, mob/user)
