@@ -21,7 +21,7 @@
 	. = ..()
 	RemoveElement(/datum/element/footstep, FOOTSTEP_MOB_SHOE, 1, -6) // drop the generic shoe steps, we make our own
 
-// Heavy footsteps:alternates between two sounds (rarely repeating one) with a random pitch each time
+// Heavy footsteps: alternates between two sounds (rarely repeating one) with a random pitch each time
 /mob/living/simple_mob/creature/wendigo/SelfMove(turf/n, direct, movetime)
 	var/turf/old_turf = get_turf(src)
 	. = ..()
