@@ -15,21 +15,11 @@
 	speak_emote = list("screeches")
 	movement_cooldown = 1
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/wendigo
-	var/step_toggle = FALSE   // which of the two step sounds played last
+	movement_sound = "heavystep" // heavy1/heavy2, see get_sfx
 
 /mob/living/simple_mob/creature/wendigo/Initialize(mapload)
 	. = ..()
 	RemoveElement(/datum/element/footstep, FOOTSTEP_MOB_SHOE, 1, -6) // drop the generic shoe steps, we make our own
-
-// Heavy footsteps: alternates between two sounds (rarely repeating one) with a random pitch each time
-/mob/living/simple_mob/creature/wendigo/SelfMove(turf/n, direct, movetime)
-	var/turf/old_turf = get_turf(src)
-	. = ..()
-	if(. && old_turf != get_turf(src))
-		if(prob(85)) // usually alternate, occasionally repeat
-			step_toggle = !step_toggle
-		var/step_sound = step_toggle ? 'sound/effects/footstep/heavy1.ogg' : 'sound/effects/footstep/heavy2.ogg'
-		playsound(src, step_sound, 60, FALSE, frequency = rand(85, 115) / 100 * 44100)
 
 	// The wendigo's brain: a normal melee AI that screeches when it spots prey
 /datum/ai_holder/simple_mob/melee/wendigo
