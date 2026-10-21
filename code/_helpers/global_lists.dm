@@ -134,6 +134,8 @@ GLOBAL_LIST_EMPTY(mannequins)
 /proc/make_datum_reference_lists()
 	var/list/paths
 
+	init_keybindings() // OutpostUbiquity edit
+
 	//Hair - Initialise all /datum/sprite_accessory/hair into an list indexed by hair-style name
 	paths = subtypesof(/datum/sprite_accessory/hair)
 	for(var/path in paths)
@@ -1326,21 +1328,6 @@ GLOBAL_LIST_INIT(description_icons, list(
 
 	"hatchet" = image(icon='icons/obj/weapons.dmi',icon_state="hatchet"),
 	))
-
-// TODO - Optimize this into numerics if this ends up working out
-GLOBAL_LIST_INIT(MOVE_KEY_MAPPINGS, list(
-	"North" = NORTH_KEY,
-	"South" = SOUTH_KEY,
-	"East" = EAST_KEY,
-	"West" = WEST_KEY,
-	"W" = W_KEY,
-	"A" = A_KEY,
-	"S" = S_KEY,
-	"D" = D_KEY,
-	"Shift" = SHIFT_KEY,
-	"Ctrl" = CTRL_KEY,
-	"Alt" = ALT_KEY,
-))
 
 GLOBAL_LIST_EMPTY(total_extraction_beacons)
 

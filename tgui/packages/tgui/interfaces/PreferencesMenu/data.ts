@@ -21,7 +21,20 @@ export enum Window {
   Keybindings = 2,
 }
 
+export type KeybindingEntry = {
+  name: string;
+  full_name: string;
+  description: string;
+  group: string;
+  default_keys: string[];
+  weight: number;
+};
+
 export type PreferencesMenuData = {
+  keybindings?: Record<string, KeybindingEntry[]>;
+  keybindings_by_name?: Record<string, string[]>;
+  max_keys_per_keybind?: number;
+
   character_profiles: (string | null)[];
 
   character_preferences: {

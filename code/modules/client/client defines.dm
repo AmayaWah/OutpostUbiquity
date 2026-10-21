@@ -149,10 +149,18 @@
 		// INPUT //
 		///////////
 
-	/// Bitfield of modifier keys (Shift, Ctrl, Alt) held currently.
-	var/mod_keys_held = 0
-	/// Bitfield of movement keys (WASD/Cursor Keys) held currently.
-	var/move_keys_held = 0
+	/// Keys held currently, as "key" = TRUE
+	var/list/keys_held = list()
+	/// Movement keys, as "key" = direction. Built from the player's keybindings.
+	var/list/movement_keys = list()
+
+	/// Keypress flood protection
+	var/client_keysend_amount = 0
+	var/next_keysend_reset = 0
+	var/next_keysend_trip_reset = 0
+	var/keysend_tripped = FALSE
+	/// When the Tab key last swapped between the input bar and hotkeys
+	var/last_hotkey_toggle = 0
 
 	/// These next two vars are to apply movement for keypresses and releases made while move delayed.
 	/// Because discarding that input makes the game less responsive.

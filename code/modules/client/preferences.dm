@@ -18,6 +18,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//game-preferences
 	var/lastchangelog = ""				//Saved changlog filesize to detect if there was a change // CHOMPAdd
 	var/be_special = 0					//Special role selection
+	/// Player keybinds, as "key" = list("keybinding name", ...). Defaults are seeded from the keybinding datums. // OutpostUbiquity edit
+	var/list/key_bindings = list()
 
 	//character preferences
 	var/b_type = DEFAULT_BLOOD_TYPE		//blood type (not-chooseable)

@@ -6,11 +6,14 @@
 /atom/movable/keyLoop(client/user)
 	// Bail out if the user is holding the "face direction" key (Maybe?)
 	// TODO - I think this breaks non-hotkeys WASD movement, so maybe adopt the /tg solution)
-	if(user.mod_keys_held & CTRL_KEY)
+	if(user.keys_held["Ctrl"]) // OutpostUbiquity edit
 		return
 
 	var/must_call_move = FALSE
-	var/movement_dir = MOVEMENT_KEYS_TO_DIR(user.move_keys_held)
+	var/movement_dir = NONE // OutpostUbiquity edit start
+	for(var/_key in user.keys_held)
+		movement_dir |= user.movement_keys[_key]
+	// OutpostUbiquity edit end
 	if(user.next_move_dir_add)
 		must_call_move = TRUE // So that next_move_dir_add gets cleared if its time.
 		movement_dir |= user.next_move_dir_add

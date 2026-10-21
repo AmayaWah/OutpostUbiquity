@@ -5,9 +5,7 @@
 
 	show_laws(0)
 
-	// Override the DreamSeeker macro with the borg version!
-	client.set_hotkeys_macro("borgmacro", "borghotkeymode")
-
+	// OutpostUbiquity edit: borg hotkeys are keybindings now, so there is no separate borg macro to override with.
 	repick_laws()
 
 	// Forces synths to select an icon relevant to their module

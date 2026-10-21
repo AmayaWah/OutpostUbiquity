@@ -335,6 +335,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	prefs.sanitize_preferences()
 	if(prefs)
 		prefs.selecting_slots = FALSE
+	ensure_keys_set() // OutpostUbiquity edit
 
 	// Initialize stat panel
 	stat_panel.initialize(
@@ -636,6 +637,16 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	prefs.current_window = PREFERENCE_TAB_GAME_PREFERENCES
 	prefs.update_tgui_static_data(mob)
 	prefs.tgui_interact(mob)
+
+// OutpostUbiquity edit start
+/client/verb/keybindings()
+	set name = "Keybindings"
+	set category = "Preferences.Game"
+
+	prefs.current_window = PREFERENCE_TAB_KEYBINDINGS
+	prefs.update_tgui_static_data(mob)
+	prefs.tgui_interact(mob)
+// OutpostUbiquity edit end
 
 /client/proc/findJoinDate()
 	var/list/http = world.Export("http://byond.com/members/[ckey]?format=text")

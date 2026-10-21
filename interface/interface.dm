@@ -229,12 +229,12 @@ Any-Mode: (hotkey doesn't need to be on)
 		to_chat(src,admin)
 
 // Set the DreamSeeker input macro to the type appropriate for its mob
-/client/proc/set_hotkeys_macro(macro_name = "macro", hotkey_macro_name = "hotkeymode", hotkeys_enabled = null)
+/client/proc/set_hotkeys_macro(hotkeys_enabled = null) // OutpostUbiquity edit: macro sets are now built by set_macros()
 	// If hotkeys mode was not specified, fall back to choice of default in client preferences.
 	if(isnull(hotkeys_enabled))
 		hotkeys_enabled = prefs?.read_preference(/datum/preference/toggle/hotkeys_default)
 
 	if(hotkeys_enabled)
-		winset(src, null, "mainwindow.macro=[hotkey_macro_name] hotkey_toggle.is-checked=true mapwindow.map.focus=true")
+		winset(src, null, "mainwindow.macro=[SKIN_MACROSET_CLASSIC_HOTKEYS] hotkey_toggle.is-checked=true mapwindow.map.focus=true")
 	else
-		winset(src, null, "mainwindow.macro=[macro_name] hotkey_toggle.is-checked=false input.focus=true")
+		winset(src, null, "mainwindow.macro=[SKIN_MACROSET_CLASSIC_INPUT] hotkey_toggle.is-checked=false input.focus=true")

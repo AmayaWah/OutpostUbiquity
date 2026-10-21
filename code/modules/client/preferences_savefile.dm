@@ -149,18 +149,29 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	default_slot	= savefile.get_entry("default_slot", default_slot)
 	lastnews		= savefile.get_entry("lastnews", lastnews)
 	lastlorenews	= savefile.get_entry("lastlorenews", lastlorenews)
+	key_bindings	= savefile.get_entry("key_bindings", key_bindings) // OutpostUbiquity edit
 
 /datum/preferences/proc/sanitize_early_prefs()
 	lastchangelog	= sanitize_text(lastchangelog, initial(lastchangelog)) // CHOMPAdd
 	default_slot 	= sanitize_integer(default_slot, 1, CONFIG_GET(number/character_slots), initial(default_slot))
 	lastnews		= sanitize_text(lastnews, initial(lastnews))
 	lastlorenews	= sanitize_text(lastlorenews, initial(lastlorenews))
+	// OutpostUbiquity edit start
+	if(!islist(key_bindings))
+		key_bindings = list()
+	for(var/key in key_bindings)
+		if(!islist(key_bindings[key]))
+			key_bindings -= key
+	if(!length(key_bindings))
+		key_bindings = get_default_keybindings()
+	// OutpostUbiquity edit end
 
 /datum/preferences/proc/save_early_prefs()
 	savefile.set_entry("lastchangelog",	lastchangelog) // CHOMPAdd
 	savefile.set_entry("default_slot",	default_slot)
 	savefile.set_entry("lastnews",		lastnews)
 	savefile.set_entry("lastlorenews",	lastlorenews)
+	savefile.set_entry("key_bindings",	key_bindings) // OutpostUbiquity edit
 
 /datum/preferences/proc/load_preferences(skip_client)
 	if(!savefile)
