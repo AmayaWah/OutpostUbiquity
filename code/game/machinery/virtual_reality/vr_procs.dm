@@ -70,6 +70,9 @@
 	//Write the appearance and whatnot out to the character
 	var/client/C = client
 	C.prefs.copy_to(avatar)
+	// Organs and blood were made with the default blood type before prefs applied ours, resync them or organs reject
+	avatar.sync_organ_dna()
+	avatar.initialize_vessel()
 	avatar.key = key
 	for(var/lang in C.prefs.alternate_languages)
 		var/datum/language/chosen_language = GLOB.all_languages[lang]
