@@ -200,7 +200,7 @@
 	icon_expected_width = 64 //Chomp EDIT
 	icon_state = "carbine" // This isn't a carbine. :T
 	item_state = "z8carbine"
-	wielded_item_state = "z8bulldog-wielded"
+	wielded_item_state = "z8carbine-wielded"
 	w_class = ITEMSIZE_HUGE //CHOMP Edit.
 	force = 10
 	caliber = "7.62mm"
