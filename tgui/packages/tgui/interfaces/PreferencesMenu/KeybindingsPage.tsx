@@ -4,6 +4,7 @@ import { releaseHeldKeys } from 'tgui/hotkeys';
 import {
   Box,
   Button,
+  Input,
   Modal,
   Stack,
   Tooltip,
@@ -126,6 +127,7 @@ export const KeybindingsPage = (props) => {
   const [capture, setCapture] = useState<Capture | null>(null);
   const [conflict, setConflict] = useState<Conflict | null>(null);
   const [confirmResetAll, setConfirmResetAll] = useState(false);
+  const [search, setSearch] = useState('');
 
   const entriesByName: Record<string, KeybindingEntry> = {};
   for (const entries of Object.values(keybindings)) {
@@ -207,10 +209,18 @@ export const KeybindingsPage = (props) => {
   const categoryEntries: [string, ReactNode][] = Object.entries(keybindings)
     .map(([category, entries]) => ({
       category,
-      entries: [...entries].sort(
-        (a, b) => a.weight - b.weight || a.full_name.localeCompare(b.full_name),
-      ),
+      entries: entries
+        .filter(
+          (entry) =>
+            !search ||
+            entry.full_name.toLowerCase().includes(search.toLowerCase()),
+        )
+        .sort(
+          (a, b) =>
+            a.weight - b.weight || a.full_name.localeCompare(b.full_name),
+        ),
     }))
+    .filter(({ entries }) => entries.length > 0)
     .sort(
       (a, b) =>
         Math.min(...a.entries.map((entry) => entry.weight)) -
@@ -242,11 +252,17 @@ export const KeybindingsPage = (props) => {
                     minWidth={9}
                     textAlign="center"
                     selected={capturing}
+                    tooltip={capturing ? undefined : 'Right-click to unbind'}
                     onClick={() =>
                       setCapture(
                         capturing ? null : { name: entry.name, oldKey: key },
                       )
                     }
+                    onContextMenu={(event) => {
+                      event.preventDefault();
+                      setCapture(null);
+                      act('clear_keybind', { keybinding: entry.name, key });
+                    }}
                   >
                     {capturing ? 'Press a key...' : prettyKey(key)}
                   </Button>
@@ -332,6 +348,14 @@ export const KeybindingsPage = (props) => {
           <Stack align="center" px={2} pb={1}>
             <Stack.Item grow>
               Click a key to change it, then press the new key. Escape cancels.
+            </Stack.Item>
+            <Stack.Item>
+              <Input
+                width={16}
+                placeholder="Search actions"
+                value={search}
+                onChange={(value) => setSearch(value)}
+              />
             </Stack.Item>
             <Stack.Item>
               <Button

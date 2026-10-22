@@ -230,7 +230,17 @@ Any-Mode: (hotkey doesn't need to be on)
 
 // Set the DreamSeeker input macro to the type appropriate for its mob
 /client/proc/set_hotkeys_macro(hotkeys_enabled = null) // OutpostUbiquity edit: macro sets are now built by set_macros()
-	// If hotkeys mode was not specified, fall back to choice of default in client preferences.
+	set waitfor = FALSE // OutpostUbiquity edit
+	// If hotkeys mode was not specified, keep the mode the player is already in, so reconnecting or switching mobs doesn't change it.
+	// OutpostUbiquity edit start
+	if(isnull(hotkeys_enabled))
+		var/current_macroset = winget(src, "mainwindow", "macro")
+		if(current_macroset == SKIN_MACROSET_CLASSIC_HOTKEYS)
+			hotkeys_enabled = TRUE
+		else if(current_macroset == SKIN_MACROSET_CLASSIC_INPUT)
+			hotkeys_enabled = FALSE
+	// OutpostUbiquity edit end
+	// Otherwise, fall back to choice of default in client preferences.
 	if(isnull(hotkeys_enabled))
 		hotkeys_enabled = prefs?.read_preference(/datum/preference/toggle/hotkeys_default)
 

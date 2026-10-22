@@ -1,5 +1,5 @@
-GLOBAL_LIST_EMPTY(classic_keybinding_list_by_key)
-GLOBAL_LIST_EMPTY(hotkey_keybinding_list_by_key)
+GLOBAL_LIST_EMPTY_TYPED(classic_keybinding_list_by_key, /list)
+GLOBAL_LIST_EMPTY_TYPED(hotkey_keybinding_list_by_key, /list)
 GLOBAL_LIST_EMPTY(keybindings_by_name)
 
 // This is a mapping from JS keys to Byond - ref: https://keycode.info/
@@ -24,7 +24,8 @@ GLOBAL_LIST_INIT(_kbMap, list(
 /proc/get_default_keybindings()
 	. = list()
 	for(var/key in GLOB.hotkey_keybinding_list_by_key)
-		.[key] = GLOB.hotkey_keybinding_list_by_key[key].Copy()
+		var/list/default_binds = GLOB.hotkey_keybinding_list_by_key[key]
+		.[key] = default_binds.Copy()
 
 /// Turns a key sent by the keybindings UI into the format keyDown() builds (Alt, Ctrl, Shift, then the key), or null if it isn't a bindable key.
 /proc/normalize_keybind_key(raw_key)
@@ -58,6 +59,19 @@ GLOBAL_LIST_INIT(_kbMap, list(
 		if(!initial(keybinding.name))
 			continue
 		add_keybinding(new keybinding)
+	init_emote_keybinds()
+
+/// Makes a keybinding for every emote key. Reads the keys off the emote types, so no emote has to be created.
+/proc/init_emote_keybinds()
+	for(var/emote_type in subtypesof(/datum/decl/emote))
+		var/datum/decl/emote/faketype = emote_type
+		var/key = initial(faketype.key)
+		// Abstract emotes have no key, and several types can share one
+		if(!key || GLOB.keybindings_by_name["emote_[key]"])
+			continue
+		var/datum/keybinding/emote/emote_kb = new
+		emote_kb.link_to_emote(key)
+		add_keybinding(emote_kb)
 
 /// Adds an instanced keybinding to the global tracker
 /proc/add_keybinding(datum/keybinding/instance)
