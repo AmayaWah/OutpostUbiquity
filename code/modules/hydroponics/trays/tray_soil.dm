@@ -75,7 +75,8 @@
 	qdel(src)
 
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible/process()
-	if(!seed)
+	// OutpostUbiquity edit: A holder that has left the world (no turf) can't grow vines, and would spawn them in nullspace.
+	if(!seed || !isturf(loc))
 		qdel(src)
 		return
 	else if(name=="plant")

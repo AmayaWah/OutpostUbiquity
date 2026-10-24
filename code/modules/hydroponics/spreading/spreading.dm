@@ -78,8 +78,10 @@
 
 /obj/effect/plant/Destroy()
 	neighbors.Cut()
-	if(seed.get_trait(TRAIT_SPREAD)==2)
-		unsense_proximity(callback = TYPE_PROC_REF(/atom, HasProximity), center = get_turf(src))
+	// OutpostUbiquity edit: Initialize() can queue us for deletion before we have a seed, and we may have no turf to stop listening on.
+	var/turf/our_turf = get_turf(src)
+	if(our_turf && seed?.get_trait(TRAIT_SPREAD) == 2)
+		unsense_proximity(callback = TYPE_PROC_REF(/atom, HasProximity), center = our_turf)
 	SSplants.remove_plant(src)
 	for(var/obj/effect/plant/neighbor in range(1,src))
 		SSplants.add_plant(neighbor)
