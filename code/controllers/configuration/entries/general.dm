@@ -141,6 +141,12 @@
 	default = 36000
 	min_val = 0
 
+/// Whether crew transfer votes are held. If 0, there are no votes and the shuttle is called when vote_autotransfer_initial has passed. // OutpostUbiquity edit
+/datum/config_entry/number/vote_autotransfer_enabled
+	default = 1
+	min_val = 0
+	max_val = 1
+
 ///Length of time before round start when autogamemode vote is called (in seconds, default 100).
 /datum/config_entry/number/vote_autogamemode_timeleft
 	default = 100

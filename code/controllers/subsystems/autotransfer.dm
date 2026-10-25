@@ -9,11 +9,21 @@ SUBSYSTEM_DEF(transfer)
 	VAR_PRIVATE/currenttick = 0
 	VAR_PRIVATE/shift_hard_end = 0
 	VAR_PRIVATE/shift_last_vote = 0
+	/// Whether crew transfer votes are held. Without them the shift ends when vote_autotransfer_initial has passed. // OutpostUbiquity edit
+	VAR_PRIVATE/votes_enabled = TRUE
 
 /datum/controller/subsystem/transfer/Initialize()
 	timerbuffer = CONFIG_GET(number/vote_autotransfer_initial)
-	shift_hard_end = CONFIG_GET(number/vote_autotransfer_initial) + (CONFIG_GET(number/vote_autotransfer_interval) * 2) //CHOMPStation Edit //Change this "1" to how many extend votes you want there to be.
-	shift_last_vote = shift_hard_end - CONFIG_GET(number/vote_autotransfer_interval)
+	// OutpostUbiquity edit start
+	votes_enabled = !!CONFIG_GET(number/vote_autotransfer_enabled)
+	if(votes_enabled)
+		shift_hard_end = CONFIG_GET(number/vote_autotransfer_initial) + (CONFIG_GET(number/vote_autotransfer_interval) * 2) //CHOMPStation Edit //Change this "1" to how many extend votes you want there to be.
+		shift_last_vote = shift_hard_end - CONFIG_GET(number/vote_autotransfer_interval)
+	else
+		// A fixed end with no votes, so there is no "last chance to extend" warning either
+		shift_hard_end = CONFIG_GET(number/vote_autotransfer_initial)
+		shift_last_vote = 1000000000000
+	// OutpostUbiquity edit end
 	return SS_INIT_SUCCESS
 
 /datum/controller/subsystem/transfer/fire(resumed)
@@ -26,7 +36,7 @@ SUBSYSTEM_DEF(transfer)
 		init_shift_change(null, 1)
 		shift_hard_end = timerbuffer + CONFIG_GET(number/vote_autotransfer_interval) //If shuttle somehow gets recalled, let's force it to call again next time a vote would occur.
 		timerbuffer = timerbuffer + CONFIG_GET(number/vote_autotransfer_interval) //Just to make sure a vote doesn't occur immediately afterwords.
-	else if (round_duration_in_ds >= timerbuffer - 1 MINUTE)
+	else if (votes_enabled && round_duration_in_ds >= timerbuffer - 1 MINUTE) // OutpostUbiquity edit
 		SSvote.start_vote(new /datum/vote/crew_transfer)
 		timerbuffer = timerbuffer + CONFIG_GET(number/vote_autotransfer_interval)
 
