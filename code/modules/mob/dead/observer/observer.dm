@@ -396,7 +396,15 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		to_chat(src, "Not when you're not dead!")
 		return
 
-	src.forceMove(pick(get_area_turfs(A)))
+	// OutpostUbiquity edit start: some areas exist without any turfs on this map, and pick() fails on an empty list
+	if(!A)
+		return
+	var/list/area_turfs = get_area_turfs(A)
+	if(!length(area_turfs))
+		to_chat(src, span_filter_notice("There is nowhere to teleport to in that area."))
+		return
+	src.forceMove(pick(area_turfs))
+	// OutpostUbiquity edit end
 	src.on_mob_jump()
 
 /mob/observer/dead/verb/follow(mobname as anything in jumpable_mobs())

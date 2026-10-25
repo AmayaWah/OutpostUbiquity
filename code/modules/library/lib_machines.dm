@@ -173,7 +173,7 @@
 
 /obj/machinery/librarycomp/tgui_data(mob/user)
 	var/data[0]
-	data["admin_mode"] = check_rights_for(user.client, (R_ADMIN|R_MOD))
+	data["admin_mode"] = check_rights_for(user?.client, (R_ADMIN|R_MOD)) // OutpostUbiquity edit: the user can be gone by the time the UI refreshes
 	data["is_public"] = FALSE
 	data["screenstate"] = screenstate
 	data["emagged"] = emagged

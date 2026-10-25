@@ -68,7 +68,7 @@
 	#ifdef TGUI_DEBUGGING
 	log_tgui(client, "[id]/initiailize ([src])")
 	#endif
-	if(!client)
+	if(QDELETED(client)) // OutpostUbiquity edit: a client that has disconnected is still a valid reference, but we can't send it anything
 		return
 	src.initial_fancy = fancy
 	src.initial_assets = assets
@@ -114,6 +114,9 @@
 	if (inline_css)
 		inline_css = "<style>\n[isfile(inline_css) ? file2text(inline_css) : inline_css]\n</style>"
 		html = replacetextEx(html, "<!-- tgui:inline-css -->", inline_css)
+	// OutpostUbiquity edit: they may have disconnected while the assets were being sent
+	if(QDELETED(client))
+		return
 	// Open the window
 	client << browse(html, "window=[id];[options]")
 	// Detect whether the control is a browser

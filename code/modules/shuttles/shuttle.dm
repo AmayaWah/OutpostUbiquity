@@ -321,6 +321,8 @@
 					continue
 				if(isobserver(AM) || isEye(AM))
 					continue
+				if(istype(AM, /obj/effect/abstract/directional_lighting)) // OutpostUbiquity edit: Owned by a light component, which cleans it up. It refuses to be deleted by anything else.
+					continue
 				if(length(AM.locs) > 1) // multi-loc objects need to check if it's their actual loc, and not just a corner!
 					if(AM.loc != dst_turf)
 						continue

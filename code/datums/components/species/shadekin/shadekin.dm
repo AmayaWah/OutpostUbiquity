@@ -9,7 +9,7 @@
 	///How much energy we can have
 	var/max_dark_energy = 100
 	///Always be at our max_dark_energy
-	var/dark_energy_infinite = TRUE
+	var/dark_energy_infinite = FALSE // OutpostUbiquity edit: shadekin have to manage their energy. The rakshasa still sets this to TRUE itself.
 	///How much energy we generate in the dark
 	var/energy_dark = 0.75
 	///How much energy we generate in the light

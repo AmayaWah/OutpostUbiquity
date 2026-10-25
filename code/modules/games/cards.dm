@@ -550,7 +550,13 @@
 				M.Turn(90)
 				M.Translate(-2,  0)
 	var/i = 0
+	// OutpostUbiquity edit: With more than 20 cards the offset is 0, so extra cards are drawn on top of each other and show nothing new.
+	// Every one of them still costs an overlay, and a hand of 100 or more hits the overlay limit, so only draw the top 20.
+	var/hidden_cards = max(cardNumber - 20, 0)
 	for(var/datum/playingcard/P in cards)
+		if(hidden_cards > 0)
+			hidden_cards--
+			continue
 		var/image/I = new(src.icon, (concealed ? "[P.back_icon]" : "[P.card_icon]") )
 		//I.pixel_x = origin+(offset*i)
 		switch(direction)

@@ -357,6 +357,10 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 
 	if(preference_entry.savefile_identifier == PREFERENCE_CHARACTER && write_mode != WRITE_PREF_INSTANT)
 		var/save_data = get_save_data_for_savefile_identifier(preference_entry.savefile_identifier)
+		// OutpostUbiquity edit: A slot that was never saved has no entry yet, and the setup items can't write to null.
+		// The value is already cached, and it is written out when the slot is first saved.
+		if(isnull(save_data))
+			return TRUE
 		player_setup.save_character(save_data)
 	else
 		savefile.save()
