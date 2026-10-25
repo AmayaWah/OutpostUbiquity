@@ -13,7 +13,7 @@
 	melee_damage_upper = 30
 	attacktext = list("slashed", "clawed")
 	speak_emote = list("screeches")
-	movement_cooldown = 1
+	movement_cooldown = 0
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/wendigo
 	movement_sound = "heavystep" // heavy1/heavy2, see get_sfx
 
