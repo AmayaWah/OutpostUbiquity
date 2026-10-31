@@ -319,7 +319,7 @@
 	var/list/sols = list()
 	for(var/sol_style in typesof(/obj/item/clothing/head/beret/solgov))
 		var/obj/item/clothing/head/beret/solgov/sol = sol_style
-		sols[initial(sol.name)] = sol
+		sols[strip_improper(initial(sol.name))] = sol // OutpostUbiquity edit: \improper marker doesn't survive the savefile, resetting the choice
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(sols))
 
 /datum/gear/head/surgery
