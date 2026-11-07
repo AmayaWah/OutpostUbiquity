@@ -2882,12 +2882,11 @@
 /turf/simulated/floor/plating/turfpack/muriki,
 /area/mine/explored/muriki/cave/deepdark)
 "agQ" = (
-/obj/structure/prop/rock/small,
-/obj/structure/ladder/up,
+/obj/effect/abstract/horror_cave_warp,
 /turf/simulated/mineral/floor/turfpack/muriki{
 	ignore_mapgen = 1
 	},
-/area/mine/explored/muriki/cave/deepdark)
+/area/mine/unexplored/muriki/cave/deepdark)
 "agR" = (
 /turf/simulated/flesh/indestructable,
 /area/muriki/processor/depths)
@@ -9160,7 +9159,7 @@ bHg
 bHg
 fMG
 fMG
-fMG
+agQ
 fMG
 fMG
 fMG
@@ -14213,7 +14212,7 @@ bHg
 bHg
 fMG
 fMG
-fMG
+agQ
 bHg
 bHg
 bHg
@@ -20129,7 +20128,7 @@ bHg
 bHg
 bHg
 fMG
-fMG
+agQ
 fMG
 fMG
 fMG
@@ -21307,7 +21306,7 @@ bHg
 bHg
 fMG
 fMG
-fMG
+agQ
 bHg
 bHg
 bHg
@@ -23493,7 +23492,7 @@ bHg
 bHg
 bHg
 fMG
-fMG
+agQ
 fMG
 fMG
 bHg
@@ -27011,7 +27010,7 @@ bHg
 bHg
 bHg
 fMG
-fMG
+agQ
 fMG
 fMG
 bHg
@@ -33886,7 +33885,7 @@ bHg
 bHg
 bHg
 bHg
-fMG
+agQ
 fMG
 fMG
 bHg
@@ -38193,7 +38192,7 @@ bHg
 bHg
 bHg
 fMG
-fMG
+agQ
 fMG
 fMG
 fMG
@@ -43968,7 +43967,7 @@ bHg
 ahb
 bHg
 fMG
-fMG
+agQ
 bHg
 bHg
 bHg
@@ -46351,7 +46350,7 @@ fMG
 fMG
 fMG
 onp
-fMG
+agQ
 fMG
 bHg
 bHg
@@ -56988,7 +56987,7 @@ fMG
 fMG
 fMG
 fMG
-fMG
+agQ
 fMG
 fMG
 fMG
@@ -57090,7 +57089,7 @@ fMG
 ahe
 fMG
 fMG
-fMG
+agQ
 fMG
 fMG
 fMG
@@ -57444,7 +57443,7 @@ bHg
 bHg
 bHg
 fMG
-fMG
+agQ
 fMG
 bHg
 bHg
@@ -65999,7 +65998,7 @@ tWu
 tWu
 agZ
 tWu
-agQ
+vEI
 ahD
 ahC
 ahA
