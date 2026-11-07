@@ -151,7 +151,7 @@ GLOBAL_LIST_EMPTY(runechat_image_cache)
 	// If we heard our name, it's important
 	// Differnt from our own system of name emphasis, maybe unify
 	var/list/names = splittext(owner.name, " ")
-	var/list/parts = list(owner.name)
+	var/list/parts = list(REGEX_QUOTE(owner.name)) // OutpostUbiquity edit: unquoted names like "???" made an invalid regex
 
 	for(var/word in names)
 		if(length(word) > 3)
