@@ -131,14 +131,14 @@
 	integer = FALSE
 	min_val = 0
 
-/// Length of time before the first autotransfer vote is called
+/// Length of time before the first autotransfer vote is called (4 hours) // OutpostUbiquity edit
 /datum/config_entry/number/vote_autotransfer_initial
-	default = 108000
+	default = 144000
 	min_val = 0
 
-/// length of time before next sequential autotransfer vote
+/// length of time before next sequential autotransfer vote, and the extension granted per vote (2 hours) // OutpostUbiquity edit
 /datum/config_entry/number/vote_autotransfer_interval
-	default = 36000
+	default = 72000
 	min_val = 0
 
 /// Whether crew transfer votes are held. If 0, there are no votes and the shuttle is called when vote_autotransfer_initial has passed. // OutpostUbiquity edit
