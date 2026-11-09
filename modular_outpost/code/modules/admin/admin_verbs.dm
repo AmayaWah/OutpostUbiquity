@@ -93,3 +93,32 @@ ADMIN_VERB_AND_CONTEXT_MENU(creepyradiomessage, R_EVENT, "Creepy Radio Message",
 
 	// We don't need the rest of saycode. So we also need to log what was said as well.
 	current.log_talk(message, LOG_SAY, color="#c0c0c0")
+
+// Hear-all toggle: speech, whispers and normal emotes from anywhere reach the admin's current mob. Subtles, psay and pme are deliberately not relayed.
+/datum/admins/var/hear_all_speech = FALSE
+
+ADMIN_VERB(toggle_hear_all_speech, R_HOLDER, "Toggle Hear All Speech", "Hear all speech, whispers and emotes from anywhere as your current mob. Subtles are not included.", ADMIN_CATEGORY_GAME)
+	var/datum/admins/holder = user.holder
+	if(!holder)
+		return
+	holder.hear_all_speech = !holder.hear_all_speech
+	to_chat(user, span_filter_system(span_boldnotice("Hear all speech [holder.hear_all_speech ? "ON: you now hear all speech, whispers and emotes (not subtles)" : "OFF"].")))
+
+/// The mobs of every admin that has hear all speech turned on.
+/proc/get_hear_all_mobs()
+	var/list/hearers = list()
+	for(var/client/C as anything in GLOB.admins)
+		if(C.holder?.hear_all_speech && C.mob && !isnewplayer(C.mob))
+			hearers += C.mob
+	return hearers
+
+/// Relays an emote to admins hearing everything, skipping those that already got it by being in range.
+/atom/proc/relay_to_hear_all_admins(message, range = world.view)
+	var/list/hearers = get_hear_all_mobs()
+	if(!LAZYLEN(hearers))
+		return
+	var/list/near = get_mobs_and_objs_in_view_fast(get_turf(src), range, remote_ghosts = FALSE)["mobs"]
+	for(var/mob/A as anything in hearers)
+		if(A in near)
+			continue
+		to_chat(A, span_filter_say("[message][isobserver(A) ? " ([ghost_follow_link(src, A)])" : ""]"))

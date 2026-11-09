@@ -168,6 +168,9 @@
 		else
 			M.visible_message(message = use_3p, self_message = use_1p, blind_message = emote_message_impaired, range = use_range, runemessage = prefinal_3p)
 
+	if(ismob(user) && use_3p)
+		var/mob/relay_from = user
+		relay_from.relay_to_hear_all_admins(use_3p, use_range) // OutpostUbiquity edit: admins hearing everything
 	do_extra(user, target)
 	if(isliving(user))
 		var/mob/living/mob = user

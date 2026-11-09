@@ -68,7 +68,8 @@
 	if(!client && !teleop)
 		return FALSE
 
-	if(isobserver(src) && client?.prefs?.read_preference(/datum/preference/toggle/ghost_ears))
+	var/admin_hears_all = client?.holder?.hear_all_speech // OutpostUbiquity edit: hears everything, even clientless speakers and in vacuum
+	if(isobserver(src) && !admin_hears_all && client?.prefs?.read_preference(/datum/preference/toggle/ghost_ears))
 		if(speaker && !speaker.client && !(speaker in view(src)))
 			//Does the speaker have a client?  It's either random stuff that observers won't care about (Experiment 97B says, 'EHEHEHEHEHEHEHE')
 			//Or someone snoring.  So we make it where they won't hear it.
@@ -76,7 +77,7 @@
 
 	//make sure the air can transmit speech - hearer's side
 	var/turf/T = get_turf(src)
-	if(T && !isobserver(src)) //Ghosts can hear even in vacuum.
+	if(T && !isobserver(src) && !admin_hears_all) //Ghosts can hear even in vacuum.
 		var/datum/gas_mixture/environment = T.return_air()
 		var/pressure = environment ? environment.return_pressure() : 0
 		if(pressure < SOUND_MINIMUM_PRESSURE && get_dist(speaker, src) > 1)

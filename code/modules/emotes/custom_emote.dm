@@ -93,6 +93,7 @@
 
 	var/list/in_range = get_mobs_and_objs_in_view_fast(T,range,2,remote_ghosts = client ? TRUE : FALSE)
 	var/list/m_viewers = in_range["mobs"]
+	m_viewers |= get_hear_all_mobs() // OutpostUbiquity edit: admins hearing everything
 	var/list/o_viewers = in_range["objs"]
 
 	for(var/obj/o in contents)

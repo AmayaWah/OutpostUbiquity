@@ -391,6 +391,7 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			var/list/results = get_mobs_and_objs_in_view_fast(T, world.view, remote_ghosts = client ? TRUE : FALSE)
 			if(mobs_can_hear)
 				listening = results["mobs"]
+				listening |= get_hear_all_mobs() // OutpostUbiquity edit: admins hearing everything
 			if(objs_can_hear)
 				listening_obj = results["objs"]
 	else
@@ -425,8 +426,9 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 
 			if(M && src) //If we still exist, when the spawn processes
 				// Ghosts don't hear whispers
+				var/admin_hears_all = M.client?.holder?.hear_all_speech // OutpostUbiquity edit: hears everything, whispers included
 				var/is_whisper = whispering || (comsig_flags & COMSIG_SAY_HIDDEN_FROM_GHOSTS)
-				if(is_whisper && isobserver(M) && (!M.client?.prefs?.read_preference(/datum/preference/toggle/ghost_see_whisubtle) || \
+				if(is_whisper && !admin_hears_all && isobserver(M) && (!M.client?.prefs?.read_preference(/datum/preference/toggle/ghost_see_whisubtle) || \
 				(!(client?.prefs?.read_preference(/datum/preference/toggle/whisubtle_vis) || (isbelly(M.loc) && src == M.loc:owner))  && !check_rights_for(M.client, R_HOLDER))))
 					M.show_message(span_game(span_say(span_name(src.name) + " [w_not_heard].")), 2)
 					return
@@ -434,13 +436,13 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 				var/dst = get_dist(get_turf(M),get_turf(src))
 				var/runechat_enabled = M.client?.prefs?.read_preference(/datum/preference/toggle/runechat_mob)
 
-				if(dst <= message_range || (M.stat == DEAD && !forbid_seeing_deadchat)) //Inside normal message range, or dead with ears (handled in the view proc)
+				if(dst <= message_range || admin_hears_all || (M.stat == DEAD && !forbid_seeing_deadchat)) //Inside normal message range, or dead with ears (handled in the view proc)
 					if(M.hear_say(message_pieces, verb, italics, src, speech_sound, sound_vol))
 						if(M.client && !runechat_enabled)
 							var/image/I1 = listening[M] || speech_bubble
 							images_to_clients[I1] |= M.client
 							M << I1
-				if(is_whisper && !isobserver(M)) //Don't even bother with these unless whispering
+				if(is_whisper && !isobserver(M) && !admin_hears_all) //Don't even bother with these unless whispering
 					if(dst > message_range && dst <= w_scramble_range) //Inside whisper scramble range
 						if(M.hear_say(stars_all(message_pieces), verb, italics, src, speech_sound, sound_vol*0.2))
 							if(M.client && !runechat_enabled)
