@@ -122,3 +122,9 @@ ADMIN_VERB(toggle_hear_all_speech, R_HOLDER, "Toggle Hear All Speech", "Hear all
 		if(A in near)
 			continue
 		to_chat(A, span_filter_say("[message][isobserver(A) ? " ([ghost_follow_link(src, A)])" : ""]"))
+
+GLOBAL_VAR_INIT(outpost_bsa_disabled, FALSE)
+
+ADMIN_VERB(toggle_bsa_use, R_EVENT, "Toggle BSA", "Toggles the ability to use BSA tools.", ADMIN_CATEGORY_EVENTS)
+	GLOB.outpost_bsa_disabled = !GLOB.outpost_bsa_disabled
+	to_chat(user, span_danger("BSA is now [GLOB.outpost_bsa_disabled ? "DISABLED" : "ENABLED"]."))

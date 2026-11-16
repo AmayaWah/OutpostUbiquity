@@ -8,7 +8,7 @@
 "aab" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/crew_quarters/cafeteria)
 "aac" = (
@@ -35,7 +35,7 @@
 /obj/item/uv_light,
 /obj/item/uv_light,
 /obj/item/uv_light,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -117,8 +117,8 @@
 /area/shuttle/trawler)
 "aan" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/regular{
@@ -333,8 +333,8 @@
 /area/shuttle/trawler)
 "aaC" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/blast/regular{
@@ -661,20 +661,13 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/trawler)
 "aaY" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -1245,9 +1238,9 @@
 /area/shuttle/trawler)
 "abN" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/structure/sign/department/bridge,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/shuttle/trawler)
 "abO" = (
@@ -2378,7 +2371,7 @@
 /obj/machinery/door/window{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/trawler)
 "adi" = (
@@ -2561,7 +2554,7 @@
 /obj/machinery/door/window{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/trawler)
 "adu" = (
@@ -2723,7 +2716,7 @@
 /obj/effect/floor_decal/corner/brown/border{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/table/rack,
 /obj/item/storage/pouch/flares/full_glow,
 /obj/item/suit_cooling_unit,
@@ -2866,6 +2859,11 @@
 /obj/effect/floor_decal/corner/brown/border{
 	dir = 6
 	},
+/obj/structure/table/rack,
+/obj/machinery/door/window{
+	dir = 8
+	},
+/obj/item/storage/briefcase/inflatable,
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/trawler)
 "adP" = (
@@ -3057,8 +3055,8 @@
 /area/shuttle/trawler)
 "aed" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/regular{
 	id = "trawler_blast";
 	layer = 3.8;
@@ -3113,7 +3111,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/trawler)
 "aei" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/conveyor{
@@ -3134,7 +3132,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/effect/floor_decal/borderfloorblack{
@@ -3237,19 +3235,12 @@
 /turf/simulated/floor/carpet,
 /area/muriki/crew/casino)
 "aex" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/crew/judge)
 "aey" = (
@@ -3265,20 +3256,13 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/hos)
 "aez" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -3580,7 +3564,7 @@
 /area/maintenance/substation/engineering)
 "afa" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/virology)
 "afb" = (
@@ -3865,13 +3849,13 @@
 /area/security/armoury)
 "afw" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/cable/green{
 	icon_state = "0-8"
@@ -3904,7 +3888,7 @@
 /turf/simulated/floor/tiled/milspec,
 /area/security/armoury)
 "afy" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/effect/floor_decal/milspec/color/red/half{
 	dir = 4
 	},
@@ -3955,7 +3939,7 @@
 /area/security/armoury)
 "afB" = (
 /obj/structure/closet/bombclosetsecurity,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/effect/floor_decal/milspec/color/red/half{
 	dir = 4
 	},
@@ -3970,7 +3954,7 @@
 /turf/simulated/floor/tiled/milspec,
 /area/security/armoury)
 "afC" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/light{
@@ -4260,10 +4244,7 @@
 "afX" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full{
-	dir = 10;
-	icon_state = "fwindow"
-	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/crew/arcade/lasertag)
 "afY" = (
@@ -4738,7 +4719,7 @@
 /area/rnd/telesci)
 "agL" = (
 /obj/structure/table/standard,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/item/radio/phone/medbay{
@@ -5143,9 +5124,6 @@
 /obj/effect/floor_decal/corner/orange/bordercorner{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
@@ -5154,6 +5132,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 8;
+	icon_state = "pipe-j2"
 	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/cargeng)
@@ -5554,6 +5536,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/cargeng)
 "ahI" = (
@@ -5790,6 +5773,9 @@
 	dir = 1;
 	id_tag = "tram_eng";
 	pixel_y = -20
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/cargeng)
@@ -6321,7 +6307,7 @@
 	},
 /obj/item/folder/white,
 /obj/item/folder/white,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment,
@@ -6763,6 +6749,11 @@
 /obj/effect/floor_decal/corner/white/full{
 	dir = 1
 	},
+/obj/machinery/porta_turret/heavy/lmg{
+	req_one_access = list(199);
+	enabled = 0;
+	check_all = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway)
 "akI" = (
@@ -6901,13 +6892,13 @@
 "akX" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining)
 "akY" = (
@@ -7025,17 +7016,17 @@
 /area/security/briefing_room)
 "alj" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/sign/warning/acid{
 	pixel_y = -32
 	},
@@ -7312,13 +7303,13 @@
 /area/crew_quarters/bar)
 "alH" = (
 /obj/structure/table/rack,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/item/rig/medical/equipped,
 /obj/machinery/door/window/northright{
 	name = "EVA Suit Storage";
 	req_one_access = list(5,18)
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/fireaxecabinet{
@@ -7680,7 +7671,7 @@
 /turf/simulated/floor/tiled,
 /area/engineering/corepower)
 "amn" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/computer/secure_data/detective_computer,
@@ -7712,14 +7703,14 @@
 /area/security/detectives_office)
 "amp" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
@@ -8097,6 +8088,9 @@
 	dir = 1;
 	pixel_y = 21
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/civ)
 "amW" = (
@@ -8194,6 +8188,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
+/obj/structure/disposalpipe/junction/yjunction,
 /turf/simulated/floor/tiled,
 /area/quartermaster/foyer)
 "ang" = (
@@ -8202,6 +8197,9 @@
 	},
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/civ)
@@ -8409,7 +8407,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/gloves/black,
@@ -8504,11 +8502,11 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/medbay)
 "anS" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
@@ -8543,14 +8541,14 @@
 /area/hallway/security/main)
 "anW" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/glass,
@@ -8727,7 +8725,7 @@
 	shuttle_tag = "Station Tram";
 	pixel_y = -3
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -9025,13 +9023,15 @@
 /turf/simulated/wall,
 /area/muriki/grounds/tramborder)
 "ape" = (
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 1
 	},
-/obj/structure/railing,
+/obj/structure/window/reinforced/holiday{
+	dir = 1
+	},
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk,
+/obj/effect/floor_decal/industrial/warning/full,
 /turf/simulated/floor/plating,
 /area/quartermaster/foyer)
 "apf" = (
@@ -9179,7 +9179,9 @@
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 1
 	},
-/obj/structure/railing,
+/obj/structure/window/reinforced/holiday{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/foyer)
 "apu" = (
@@ -9191,24 +9193,17 @@
 	shuttle_tag = "Station Tram";
 	pixel_y = -3
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/foyer)
 "apv" = (
-/obj/structure/railing{
-	dir = 4
+/obj/structure/simple_door/snowbrick,
+/turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki{
+	outdoors = 0
 	},
-/obj/effect/floor_decal/industrial/warning/dust{
-	dir = 1
-	},
-/obj/structure/railing{
-	dir = 1
-	},
-/obj/effect/landmark/holiday_event_spawn,
-/turf/simulated/floor/plating,
-/area/quartermaster/foyer)
+/area/muriki/grounds/engi)
 "apw" = (
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 1
@@ -9218,7 +9213,7 @@
 	shuttle_tag = "Station Tram";
 	pixel_y = -3
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -9230,7 +9225,7 @@
 	name = "tram control console";
 	shuttle_tag = "Station Tram"
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/tramstation/cargeng)
 "apy" = (
@@ -9252,12 +9247,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/maintenance/disposal)
 "apz" = (
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/warning/dust,
-/obj/structure/railing,
-/obj/effect/landmark/holiday_event_spawn,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/tramstation/cargeng)
 "apA" = (
@@ -9267,7 +9262,7 @@
 	name = "tram control console";
 	shuttle_tag = "Station Tram"
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/tramstation/civ)
 "apB" = (
@@ -9870,11 +9865,11 @@
 /area/maintenance/medbay_aft)
 "arD" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/structure/disposalpipe/segment{
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining/processing)
 "arE" = (
@@ -10543,6 +10538,23 @@
 /obj/item/stack/material/wood/oak,
 /turf/simulated/floor/wood/turfpack/muriki,
 /area/mine/unexplored/muriki/mountaineast)
+"atg" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/full/holiday/vertical,
+/turf/simulated/floor/plating,
+/area/quartermaster/mining/processing)
+"ath" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
+/turf/simulated/floor/plating,
+/area/quartermaster/mining/firstaid)
+"ati" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
+/turf/simulated/floor/plating,
+/area/security/detectives_office)
 "atj" = (
 /obj/item/beartrap{
 	anchored = 1;
@@ -10748,6 +10760,17 @@
 /obj/effect/landmark/event_spawn/dronepod_landing,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/med)
+"atM" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	id = "warehouse";
+	name = "Warehouse Shutters"
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
+/turf/simulated/floor/plating,
+/area/quartermaster/storage)
 "atN" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -10788,9 +10811,7 @@
 "atT" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/polarized/full{
-	id = "secbreak"
-	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/security/briefing_room)
 "atU" = (
@@ -10993,7 +11014,7 @@
 /area/crew_quarters/kitchen)
 "auv" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/sleeper)
 "auw" = (
@@ -11309,8 +11330,8 @@
 /area/security/tactical)
 "avl" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/regular{
 	id = "trawler_blast";
 	layer = 3.8;
@@ -11325,8 +11346,8 @@
 /area/shuttle/trawler)
 "avm" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/regular{
 	id = "trawler_blast";
 	layer = 3.8;
@@ -11344,8 +11365,8 @@
 /area/shuttle/trawler)
 "avn" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/regular{
 	id = "trawler_blast";
 	layer = 3.8;
@@ -11447,15 +11468,15 @@
 /area/shuttle/trawler)
 "avx" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -11466,28 +11487,28 @@
 "avy" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining)
 "avz" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining)
 "avA" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/blast/regular{
@@ -11504,8 +11525,8 @@
 /area/shuttle/trawler)
 "avB" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/blast/regular{
@@ -11521,8 +11542,8 @@
 /area/shuttle/trawler)
 "avC" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/regular{
@@ -11541,8 +11562,8 @@
 /area/shuttle/trawler)
 "avD" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/regular{
@@ -11561,8 +11582,8 @@
 /area/shuttle/trawler)
 "avE" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/regular{
@@ -11581,8 +11602,8 @@
 /area/shuttle/trawler)
 "avF" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/regular{
@@ -11598,8 +11619,8 @@
 /area/shuttle/trawler)
 "avG" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/full/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/regular{
@@ -11649,11 +11670,11 @@
 /area/quartermaster/office)
 "avJ" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/blast/gate/open{
@@ -11672,7 +11693,6 @@
 /area/quartermaster/storage)
 "avK" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
 /obj/machinery/door/blast/gate/open{
 	dir = 2;
 	id = "englockdown";
@@ -11685,6 +11705,7 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/engineering/foyer)
 "avL" = (
@@ -11760,7 +11781,7 @@
 	name = "Security Hail";
 	pixel_y = 32
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/storage/pouch/baton,
@@ -11866,7 +11887,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/glass_centcom{
-	name = "Bridge Access"
+	name = "Bridge Access";
+	req_one_access = list(1,5,10,19,25,28,31,47,48,52)
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/bridge/hallway)
@@ -12298,6 +12320,12 @@
 /obj/structure/fence/post,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/graveyard)
+"axn" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
+/turf/simulated/floor/plating,
+/area/security/security_aid_station)
 "axo" = (
 /turf/simulated/wall/r_wall,
 /area/medical/medbay_primary_storage)
@@ -12749,6 +12777,12 @@
 /obj/structure/barricade,
 /turf/simulated/floor/wood/turfpack/muriki,
 /area/specialty/stowaway_clubhouse)
+"ayJ" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
+/turf/simulated/floor/plating,
+/area/crew_quarters/recreation_area)
 "ayK" = (
 /obj/structure/prop/rock,
 /turf/simulated/mineral/floor/turfpack/muriki{
@@ -13316,7 +13350,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/gloves/black,
@@ -13541,7 +13575,7 @@
 	req_access = null
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_ridged,
@@ -13630,7 +13664,7 @@
 /area/maintenance/secelev)
 "aAI" = (
 /obj/effect/floor_decal/milspec/color/red/half,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/doppler_array,
@@ -13669,11 +13703,11 @@
 "aAM" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/kennels)
 "aAN" = (
@@ -13800,7 +13834,6 @@
 "aAY" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
@@ -13808,9 +13841,10 @@
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/kennels)
 "aAZ" = (
@@ -13832,13 +13866,13 @@
 "aBb" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/kennels)
 "aBc" = (
@@ -13856,11 +13890,11 @@
 	id = "security_lockdown";
 	name = "Security Lockdown"
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -13880,8 +13914,8 @@
 	id = "security_lockdown";
 	name = "Security Lockdown"
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -14002,6 +14036,12 @@
 /obj/structure/prop/rock/ice,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/mine/explored/muriki/valley)
+"aBq" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
+/turf/simulated/floor/plating,
+/area/crew_quarters/bar)
 "aBr" = (
 /obj/random/landmine,
 /obj/effect/zone_divider,
@@ -14020,6 +14060,12 @@
 	outdoors = -1
 	},
 /area/mine/unexplored/muriki/mountaineast)
+"aBu" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
+/turf/simulated/floor/plating,
+/area/medical/medbay_emt_bay)
 "aBv" = (
 /obj/random/outcrop,
 /obj/effect/zone_divider,
@@ -14066,6 +14112,12 @@
 /obj/effect/zone_divider,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/shutt)
+"aBC" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
+/turf/simulated/floor/plating,
+/area/medical/sleeper)
 "aBD" = (
 /obj/structure/fence{
 	dir = 4
@@ -14117,6 +14169,12 @@
 /obj/effect/zone_divider,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/sec)
+"aBL" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
+/turf/simulated/floor/plating,
+/area/muriki/crew/baraid)
 "aBM" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/industrial/warning/dust/corner{
@@ -14322,7 +14380,7 @@
 	},
 /area/muriki/grounds/shutt)
 "aCq" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/table/reinforced,
@@ -14694,6 +14752,12 @@
 /obj/effect/zone_divider,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/tramborder)
+"aDx" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
+/turf/simulated/floor/plating,
+/area/medical/first_aid_station)
 "aDy" = (
 /obj/structure/cliff,
 /obj/effect/zone_divider,
@@ -14799,6 +14863,12 @@
 /obj/effect/zone_divider,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/muriki/grounds/med)
+"aDO" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
+/turf/simulated/floor/plating,
+/area/medical/virology)
 "aDP" = (
 /obj/effect/zone_divider,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
@@ -14879,6 +14949,11 @@
 /obj/effect/zone_divider,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/engineering/engine_room)
+"aEb" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/full/holiday/vertical,
+/turf/simulated/floor/plating,
+/area/medical/virology)
 "aEc" = (
 /obj/structure/fence/electric_sign{
 	dir = 4
@@ -14960,7 +15035,7 @@
 	},
 /area/muriki/grounds/engi)
 "aEm" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/item/trash/syndi_cakes,
@@ -15068,8 +15143,8 @@
 "aED" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
 /obj/machinery/computer/security/telescreen/entertainment,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/reception)
 "aEE" = (
@@ -15216,6 +15291,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/muriki/processor)
+"aET" = (
+/turf/simulated/wall/snowbrick/turfpack/muriki,
+/area/muriki/grounds/engi)
 "aEU" = (
 /obj/effect/auto_crayon{
 	icon_state = "skull"
@@ -15288,6 +15366,10 @@
 /obj/structure/prop/rock/small/alt,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/mine/unexplored/muriki/valleywest)
+"aFr" = (
+/obj/structure/signpostwood/kobolds_folly,
+/turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
+/area/muriki/grounds/med)
 "aFs" = (
 /obj/structure/prop/rock/sharp,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -15296,6 +15378,18 @@
 /obj/structure/prop/rock/flat,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/mine/unexplored/muriki/valleyeast)
+"aFu" = (
+/obj/structure/window/reinforced/holiday{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 4
+	},
+/obj/structure/grille,
+/turf/simulated/floor/plating,
+/area/crew_quarters/courtroom)
 "aFv" = (
 /obj/random/outcrop,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
@@ -15318,6 +15412,23 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
+"aFz" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/dark,
+/area/maintenance/disposal)
+"aFA" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled,
+/area/maintenance/disposal)
 "aFB" = (
 /obj/effect/landmark{
 	name = "carpspawn"
@@ -15336,6 +15447,16 @@
 /obj/structure/prop/rock/small,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/mine/explored/muriki/mountaineast)
+"aFF" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/waste)
 "aFG" = (
 /obj/structure/prop/rock/flat,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -15374,6 +15495,17 @@
 /obj/effect/landmark/step_trap,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/mine/explored/muriki/valley)
+"aFQ" = (
+/obj/structure/railing,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/effect/landmark/holiday_event_spawn,
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/waste)
 "aFR" = (
 /obj/structure/prop/rock,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
@@ -15391,6 +15523,17 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/plating,
 /area/maintenance/wastedisposal)
+"aFU" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/machinery/disposal/burn_pit,
+/obj/structure/window/reinforced/holiday{
+	dir = 1
+	},
+/obj/structure/disposalpipe/trunk,
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/waste)
 "aFV" = (
 /obj/structure/fence{
 	dir = 4
@@ -15461,9 +15604,26 @@
 "aGi" = (
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/muriki/grounds/sec)
+"aGj" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/structure/window/reinforced/holiday{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/waste)
 "aGk" = (
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/muriki/grounds/waste)
+"aGl" = (
+/obj/structure/railing,
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/effect/landmark/holiday_event_spawn,
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/waste)
 "aGm" = (
 /obj/structure/fence,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
@@ -15506,6 +15666,12 @@
 /obj/structure/trailblazer/yellow,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/muriki/grounds/waste)
+"aGv" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/milspec,
+/area/janitor)
 "aGw" = (
 /obj/structure/prop/rock/sharp,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -15518,6 +15684,19 @@
 /obj/structure/fence,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/mine/explored/muriki/valley)
+"aGz" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/tiled,
+/area/quartermaster/foyer)
 "aGA" = (
 /obj/structure/fence{
 	dir = 4
@@ -15652,11 +15831,21 @@
 "aGX" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/polarized/full{
-	id = "med_checkup"
-	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/medical/exam_room)
+"aGY" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/quartermaster/foyer)
 "aGZ" = (
 /obj/random/landmine,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
@@ -15693,6 +15882,19 @@
 "aHh" = (
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/security/tactical)
+"aHi" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/tiled,
+/area/quartermaster/foyer)
 "aHj" = (
 /obj/machinery/porta_turret/heavy,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
@@ -15711,6 +15913,16 @@
 /obj/structure/prop/rock/small/alt,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/muriki/yard)
+"aHn" = (
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/civ)
 "aHo" = (
 /obj/structure/prop/rock/sharp,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -15721,6 +15933,15 @@
 	},
 /turf/simulated/floor/outdoors/snow/gravsnow/sidewalk_under/turfpack/muriki,
 /area/muriki/grounds/sec)
+"aHq" = (
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/civ)
 "aHr" = (
 /obj/random/landmine,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
@@ -15737,6 +15958,16 @@
 /obj/structure/prop/rock/small/alt,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
 /area/muriki/grounds/shutt)
+"aHv" = (
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 4;
+	icon_state = "pipe-j2"
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/civ)
 "aHw" = (
 /obj/machinery/power/grounding_rod/pre_mapped,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
@@ -15745,6 +15976,15 @@
 /obj/random/outcrop,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/muriki/grounds/shutt)
+"aHy" = (
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/civ)
 "aHz" = (
 /obj/structure/fence{
 	dir = 1
@@ -15767,6 +16007,15 @@
 "aHB" = (
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/tramborder)
+"aHC" = (
+/obj/effect/floor_decal/industrial/danger/corner{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/civ)
 "aHD" = (
 /obj/effect/landmark{
 	name = "spiderspawn"
@@ -15783,6 +16032,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/virology)
+"aHF" = (
+/obj/structure/railing,
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/effect/landmark/holiday_event_spawn,
+/turf/simulated/floor/plating,
+/area/quartermaster/foyer)
 "aHG" = (
 /obj/structure/prop/rock/sharp,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -15825,6 +16082,14 @@
 /obj/structure/prop/rock/small,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
 /area/muriki/grounds/shutt)
+"aHP" = (
+/obj/structure/railing,
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/effect/landmark/holiday_event_spawn,
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/civ)
 "aHQ" = (
 /obj/structure/fence{
 	dir = 4
@@ -15846,6 +16111,15 @@
 /obj/structure/prop/rock/small/alt,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/civ)
+"aHV" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/structure/window/reinforced/holiday{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/civ)
 "aHW" = (
 /obj/structure/prop/rock/sharp,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -15964,6 +16238,28 @@
 "aIt" = (
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/terraform)
+"aIu" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/effect/landmark/holiday_event_spawn,
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/cargeng)
+"aIv" = (
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/structure/window/reinforced/holiday,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/cargeng)
+"aIw" = (
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/structure/window/reinforced/holiday,
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/cargeng)
 "aIx" = (
 /obj/structure/flora/ausbushes/reedbush,
 /turf/simulated/floor/water/deep/indoors/turfpack/muriki,
@@ -16021,6 +16317,19 @@
 /obj/random/outcrop,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/muriki/grounds/civ)
+"aIK" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/effect/landmark/holiday_event_spawn,
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/civ)
+"aIL" = (
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/structure/window/reinforced/holiday,
+/turf/simulated/floor/plating,
+/area/muriki/tramstation/civ)
 "aIM" = (
 /obj/effect/zone_divider,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
@@ -16149,6 +16458,15 @@
 	},
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/muriki/grounds/tramborder)
+"aJj" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/cargeng)
 "aJk" = (
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/muriki/grounds/engi)
@@ -16176,10 +16494,26 @@
 /obj/random/outcrop,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/muriki/grounds/terraform)
+"aJr" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/cargeng)
 "aJs" = (
 /obj/machinery/power/grounding_rod/pre_mapped,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/muriki/grounds/civ)
+"aJt" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
+/obj/structure/disposalpipe/junction/yjunction{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/cargeng)
 "aJu" = (
 /obj/structure/prop/rock/small/alt,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
@@ -16218,10 +16552,32 @@
 /obj/effect/zone_divider,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/mine/explored/muriki/mountaineast)
+"aJB" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/industrial/danger,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-c";
+	dir = 2
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/cargeng)
+"aJC" = (
+/obj/effect/floor_decal/industrial/danger,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/civ)
 "aJD" = (
 /obj/structure/trailblazer/yellow,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/engi)
+"aJE" = (
+/obj/effect/floor_decal/industrial/danger,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/civ)
 "aJF" = (
 /obj/random/landmine,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
@@ -16230,6 +16586,25 @@
 /obj/structure/fence/cut/medium,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/muriki/grounds/engi)
+"aJH" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/cargeng)
+"aJI" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/muriki/tramstation/civ)
 "aJJ" = (
 /obj/structure/trailblazer/yellow,
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
@@ -16247,6 +16622,11 @@
 	dir = 4
 	},
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
+/area/muriki/grounds/engi)
+"aJN" = (
+/turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki{
+	outdoors = 0
+	},
 /area/muriki/grounds/engi)
 "aJO" = (
 /obj/structure/prop/rock/small,
@@ -16268,6 +16648,14 @@
 /obj/structure/prop/rock/sharp,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
 /area/mine/explored/muriki/mountaineast)
+"aJT" = (
+/obj/structure/bed/chair/backed_grey{
+	dir = 4
+	},
+/turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki{
+	outdoors = 0
+	},
+/area/muriki/grounds/engi)
 "aJU" = (
 /obj/item/extraction_pack,
 /obj/item/extraction_pack,
@@ -16297,6 +16685,12 @@
 "aJY" = (
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/sci)
+"aJZ" = (
+/obj/structure/bonfire,
+/turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki{
+	outdoors = 0
+	},
+/area/muriki/grounds/engi)
 "aKa" = (
 /obj/structure/prop/rock/flat,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -16317,6 +16711,14 @@
 /obj/structure/prop/rock/small/alt,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
 /area/muriki/grounds/sci)
+"aKf" = (
+/obj/structure/bed/chair/backed_grey{
+	dir = 8
+	},
+/turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki{
+	outdoors = 0
+	},
+/area/muriki/grounds/engi)
 "aKg" = (
 /obj/structure/prop/rock/small,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -16356,6 +16758,12 @@
 /obj/effect/landmark/late_antag/zombie,
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/muriki/grounds/med)
+"aKl" = (
+/obj/structure/bed/double,
+/turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki{
+	outdoors = 0
+	},
+/area/muriki/grounds/engi)
 "aKm" = (
 /obj/structure/prop/rock/sharp,
 /turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
@@ -16363,6 +16771,13 @@
 "aKn" = (
 /obj/random/outcrop,
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
+/area/muriki/grounds/engi)
+"aKo" = (
+/obj/fiftyspawner/wood,
+/obj/fiftyspawner/wood,
+/turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki{
+	outdoors = 0
+	},
 /area/muriki/grounds/engi)
 "aKr" = (
 /obj/structure/trailblazer/yellow,
@@ -16739,20 +17154,13 @@
 	},
 /area/mine/unexplored/muriki/mountainnorth)
 "aMf" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -16905,14 +17313,14 @@
 /area/muriki/grounds/waste)
 "aMP" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/gate/thin/open{
 	dir = 4;
 	icon_state = "shutter2_0";
@@ -17495,11 +17903,11 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -17980,26 +18388,6 @@
 "aRK" = (
 /turf/simulated/floor/plating/turfpack/muriki,
 /area/maintenance/research/north)
-"aRL" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/polarized{
-	dir = 1;
-	id = "meet_window_tint"
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "meet_window_tint"
-	},
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/turf/simulated/floor,
-/area/crew_quarters/courtroom)
 "aRM" = (
 /obj/structure/trailblazer/yellow,
 /turf/simulated/floor/water/turfpack/muriki,
@@ -18416,25 +18804,19 @@
 /turf/simulated/floor/tiled/old_tile/white,
 /area/medical/laundry)
 "aSP" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/crew_quarters/fitness)
 "aSQ" = (
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/airlock/glass_centcom{
-	name = "Bridge Access"
+	name = "Bridge Access";
+	req_one_access = list(1,5,10,19,25,28,31,47,48,52)
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/bridge/hallway)
@@ -18543,10 +18925,8 @@
 /area/bridge/hallway)
 "aTb" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/polarized/full{
-	id = "legal"
-	},
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/lawoffice)
 "aTc" = (
@@ -18873,10 +19253,8 @@
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
-/obj/structure/window/reinforced/polarized/full{
-	id = "meet_window_tint"
-	},
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor,
 /area/bridge/meeting_room)
 "aTH" = (
@@ -19519,7 +19897,7 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/muriki/bathroom/engineering)
 "aVx" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/tiled/milspec,
 /area/security/armoury)
 "aVy" = (
@@ -19592,7 +19970,7 @@
 /area/medical/reception)
 "aVF" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/computer/crew,
@@ -19823,9 +20201,6 @@
 /turf/simulated/wall,
 /area/muriki/bathroom/security)
 "aWb" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
@@ -19834,6 +20209,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/civ)
@@ -20417,16 +20795,16 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
@@ -20450,13 +20828,13 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/heads/hop)
 "aXj" = (
-/obj/machinery/recharge_station,
 /obj/effect/floor_decal/corner/white/full{
 	dir = 8
 	},
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/vending/cargo_resale/sci,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway)
 "aXk" = (
@@ -20587,10 +20965,8 @@
 "aXu" = (
 /obj/structure/grille,
 /obj/structure/cable/green,
-/obj/structure/window/reinforced/polarized/full{
-	id = "meet_window_tint"
-	},
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor,
 /area/bridge/meeting_room)
 "aXv" = (
@@ -20831,20 +21207,13 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/recreation_area)
 "aXQ" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -21082,14 +21451,14 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/grille,
@@ -21594,14 +21963,14 @@
 "aZd" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -21634,11 +22003,11 @@
 "aZg" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -21649,11 +22018,11 @@
 "aZh" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -22032,10 +22401,10 @@
 	pixel_x = -3
 	},
 /obj/effect/floor_decal/corner/blue/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/tiled/milspec,
 /area/bridge)
 "aZN" = (
@@ -22117,7 +22486,7 @@
 /obj/effect/floor_decal/corner/blue/full{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/milspec,
@@ -22352,10 +22721,10 @@
 /obj/item/clothing/accessory/solgov/specialty/pilot,
 /obj/item/clothing/accessory/solgov/specialty/pilot,
 /obj/item/clothing/accessory/solgov/specialty/pilot,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/effect/floor_decal/corner/white{
 	dir = 5
 	},
@@ -23479,10 +23848,10 @@
 /turf/simulated/floor/carpet/graycarpet,
 /area/crew_quarters/fitness)
 "bcv" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -23755,7 +24124,8 @@
 "bcS" = (
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/airlock/glass_centcom{
-	name = "Bridge Access"
+	name = "Bridge Access";
+	req_one_access = list(1,5,10,19,25,28,31,47,48,52)
 	},
 /obj/structure/sign/directions/exit{
 	pixel_y = 24;
@@ -23766,10 +24136,7 @@
 "bcT" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full{
-	dir = 10;
-	icon_state = "fwindow"
-	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/crew_quarters/fitness)
 "bcU" = (
@@ -24160,7 +24527,7 @@
 /area/muriki/crew/casino)
 "bdE" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/shuttle/trawler)
 "bdF" = (
@@ -24402,22 +24769,15 @@
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/central_two)
 "bee" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 4
+	},
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/crew_quarters/recreation_area)
 "bef" = (
@@ -24468,10 +24828,7 @@
 "bej" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full{
-	dir = 10;
-	icon_state = "fwindow"
-	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/crew_quarters/recreation_area)
 "bek" = (
@@ -24512,20 +24869,13 @@
 /turf/simulated/floor/carpet/geo,
 /area/muriki/crew/arcade)
 "bep" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
+	},
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/recreation_area)
@@ -25141,8 +25491,8 @@
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/central_two)
 "bfq" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
@@ -25154,7 +25504,7 @@
 	name = "Bridge Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -25182,7 +25532,7 @@
 /turf/simulated/floor/carpet/geo,
 /area/muriki/crew/arcade/lasertag)
 "bft" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
@@ -25194,7 +25544,7 @@
 	name = "Bridge Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -25215,7 +25565,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/central_two)
 "bfv" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
@@ -25227,10 +25577,10 @@
 	name = "Bridge Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -25734,10 +26084,10 @@
 	dir = 8
 	},
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/southleft{
@@ -25869,6 +26219,9 @@
 	},
 /obj/machinery/alarm{
 	pixel_y = 26
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/civ)
@@ -26258,14 +26611,14 @@
 /area/muriki/processor/hall/waterway_upper)
 "btu" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -26281,8 +26634,8 @@
 "btz" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
 /obj/structure/sign/greencross,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining/firstaid)
 "btE" = (
@@ -26300,7 +26653,7 @@
 /obj/effect/floor_decal/corner/red/full{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/storage/pouch/baton,
@@ -26352,17 +26705,17 @@
 /turf/simulated/floor/tiled,
 /area/storage/tools)
 "buL" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/hallway/primary/central_one)
@@ -26375,13 +26728,13 @@
 	id = "security_lockdown";
 	name = "Security Lockdown"
 	},
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/security/lobby)
 "bvc" = (
@@ -26487,7 +26840,7 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/muriki/bathroom/security)
 "bwt" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/table/rack,
@@ -26564,7 +26917,7 @@
 	},
 /obj/item/gun/launcher/grenade,
 /obj/structure/table/rack,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/window/brigdoor/northleft{
 	name = "Compliance Dispenser";
 	req_access = list(2);
@@ -26609,6 +26962,9 @@
 	},
 /obj/machinery/station_map{
 	pixel_y = 32
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/civ)
@@ -26712,16 +27068,16 @@
 "bBk" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/hallway/secondary/engineering_hallway)
@@ -26844,14 +27200,14 @@
 /area/hallway/secondary/exit)
 "bDH" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/gate/thin/open{
 	dir = 4;
 	icon_state = "shutter2_0";
@@ -26888,7 +27244,7 @@
 /area/maintenance/medbay_aft)
 "bEn" = (
 /obj/structure/table/standard,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/item/sticky_pad/random{
@@ -26959,13 +27315,13 @@
 "bGw" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
@@ -27033,7 +27389,7 @@
 	dir = 1
 	},
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/window/reinforced{
@@ -27068,13 +27424,13 @@
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/central_three)
 "bKh" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/blast/gate/thin/open{
@@ -27222,7 +27578,7 @@
 /area/medical/sleeper)
 "bKU" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/deployable/barrier,
@@ -27242,25 +27598,6 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/tiled/steel_grid,
 /area/medical/virology)
-"bLa" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/polarized{
-	id = "meet_window_tint"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "meet_window_tint"
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/turf/simulated/floor,
-/area/crew_quarters/courtroom)
 "bLc" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 5
@@ -27338,15 +27675,15 @@
 /turf/simulated/floor/tiled/old_tile/white,
 /area/security/security_equiptment_storage)
 "bMy" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/grille,
@@ -27354,8 +27691,8 @@
 /area/security/detectives_office)
 "bMQ" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/medical/virology)
 "bNe" = (
@@ -27366,8 +27703,8 @@
 /area/maintenance/cargomid)
 "bNf" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/office)
 "bNq" = (
@@ -27400,7 +27737,7 @@
 	dir = 8;
 	throw_range = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/red{
@@ -27754,14 +28091,14 @@
 /area/quartermaster/storage)
 "bUm" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/gate/open{
@@ -27858,7 +28195,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/aft)
 "bVG" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -28490,12 +28827,12 @@
 /area/medical/medbay_primary_storage)
 "chZ" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -28911,13 +29248,11 @@
 "cpO" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/disposalpipe/segment,
-/obj/structure/window/reinforced/polarized/full{
-	id = "legal"
-	},
 /obj/structure/grille,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/bridge/hallway)
 "cpP" = (
@@ -29101,7 +29436,7 @@
 "cto" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/hallway/primary/central_three)
 "ctB" = (
@@ -29179,16 +29514,16 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/courtroom)
 "cvY" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -29635,13 +29970,13 @@
 "cFL" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green,
 /obj/machinery/door/blast/regular/open{
 	id = "security_lockdown";
@@ -29852,12 +30187,12 @@
 /area/crew_quarters/kitchen)
 "cJy" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -30006,14 +30341,14 @@
 /area/muriki/processor/pools/crop)
 "cLI" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/holosign/surgery{
@@ -30067,10 +30402,10 @@
 	dir = 1
 	},
 /mob/living/simple_mob/animal/passive/mouse/white/virology,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/window/southleft{
@@ -30105,7 +30440,6 @@
 "cMO" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	dir = 4;
@@ -30114,6 +30448,7 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/medical/virology/quarantine_quarantine)
 "cNy" = (
@@ -30450,10 +30785,10 @@
 /area/crew_quarters/bar)
 "cVf" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
@@ -30476,12 +30811,12 @@
 /area/security/tactical)
 "cWh" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -30543,16 +30878,16 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/virology/quarantine_quarantine)
 "cWO" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -30765,11 +31100,10 @@
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -30778,6 +31112,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor,
 /area/engineering/corepower)
 "dcI" = (
@@ -31293,10 +31628,10 @@
 	name = "EVA Suit";
 	dir = 2
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/rig/hazard/equipped,
@@ -31310,13 +31645,13 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/crew_quarters/kitchen)
 "dkE" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /mob/living/simple_mob/animal/passive/fish/koi/poisonous{
 	name = "Babushka"
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/water/indoors,
 /area/medical/reception)
 "dkK" = (
@@ -31575,7 +31910,7 @@
 "dqj" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -31773,7 +32108,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/aft)
 "dtv" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/recharge_station,
@@ -32157,11 +32492,8 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/crew_quarters/kitchen)
 "dBd" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
-	},
-/obj/structure/window/reinforced{
-	health = 1e+006
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille{
@@ -32176,6 +32508,7 @@
 /obj/structure/cable/orange{
 	icon_state = "0-8"
 	},
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/security/tactical/red)
 "dBp" = (
@@ -32230,14 +32563,14 @@
 /area/medical/psych)
 "dCj" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/arriveelev)
 "dCm" = (
@@ -32778,10 +33111,10 @@
 /area/muriki/grounds/shutt)
 "dLX" = (
 /obj/machinery/disposal/deliveryChute,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/disposalpipe/trunk{
@@ -33195,7 +33528,7 @@
 "dVM" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/delivery)
 "dVT" = (
@@ -33295,6 +33628,9 @@
 /area/quartermaster/storage)
 "dYI" = (
 /obj/structure/window/reinforced/tinted/frosted,
+/obj/structure/mopbucket,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/mop,
 /turf/simulated/floor/tiled/kafel_full,
 /area/muriki/bathroom/security)
 "dYK" = (
@@ -33521,7 +33857,7 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/junction,
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/exit)
 "ecm" = (
@@ -33710,8 +34046,8 @@
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
 "eev" = (
-/obj/structure/window/basic/full,
 /obj/structure/grille,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/medical/virology/quarantine_quarantine)
 "eeT" = (
@@ -34009,7 +34345,7 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/muriki/bathroom/sanitorium)
 "ekd" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/elevator_warning{
 	pixel_x = 8
 	},
@@ -34154,7 +34490,7 @@
 /area/security/armoury)
 "emS" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/checkpoint2)
 "emT" = (
@@ -34294,17 +34630,17 @@
 "eqe" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -34325,13 +34661,13 @@
 /area/muriki/crew/casino)
 "eqi" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/cable/green{
 	icon_state = "0-8"
@@ -34510,10 +34846,10 @@
 /area/maintenance/wastedisposal)
 "euf" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/blast/gate/thin/open{
 	dir = 2;
@@ -34551,15 +34887,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/muriki/crew/casino)
-"euQ" = (
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/warning/dust,
-/obj/structure/railing,
-/obj/effect/landmark/holiday_event_spawn,
-/turf/simulated/floor/plating,
-/area/muriki/tramstation/civ)
 "euX" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -34612,13 +34939,13 @@
 	},
 /area/engineering/engine_room)
 "evF" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -34859,7 +35186,7 @@
 /obj/effect/floor_decal/corner/red/full{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/gloves/black,
@@ -35292,17 +35619,17 @@
 "eGK" = (
 /obj/structure/closet/bombclosetsecurity,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/tiled/milspec,
 /area/security/armoury)
 "eGS" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -35398,9 +35725,6 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/polarized/full{
-	id = "legal"
-	},
 /obj/structure/grille,
 /obj/structure/cable/green{
 	icon_state = "0-1"
@@ -35408,6 +35732,7 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/bridge/hallway)
 "eHG" = (
@@ -35619,11 +35944,11 @@
 /area/bridge/hallway)
 "eMR" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -35763,13 +36088,13 @@
 "ePy" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green,
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -35796,7 +36121,7 @@
 /obj/item/detective_scanner,
 /obj/item/detective_scanner,
 /obj/structure/table/rack/shelf,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/freezer,
@@ -35804,7 +36129,7 @@
 "eQk" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
@@ -35905,10 +36230,10 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/crew_quarters/kitchen)
 "eTa" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
 /turf/simulated/floor/plating,
@@ -36025,11 +36350,11 @@
 /turf/simulated/floor/outdoors/snow/gravsnow/sidewalk_under/turfpack/muriki,
 /area/muriki/grounds/med)
 "eUP" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
@@ -36067,7 +36392,7 @@
 "eVp" = (
 /obj/machinery/bluespace_denier,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/milspec,
@@ -36143,8 +36468,8 @@
 /area/quartermaster/office)
 "eXp" = (
 /obj/structure/closet/secure_closet/engineering_welding,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -37116,23 +37441,13 @@
 /turf/simulated/flesh,
 /area/muriki/processor/gland/airmix)
 "fsa" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/polarized{
-	id = "meet_window_tint"
-	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "meet_window_tint"
+/obj/structure/grille,
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 8
 	},
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/turf/simulated/floor,
+/turf/simulated/floor/plating,
 /area/crew_quarters/courtroom)
 "fsz" = (
 /obj/effect/floor_decal/borderfloor{
@@ -37180,14 +37495,14 @@
 "fuI" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -37866,10 +38181,10 @@
 "fHm" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/northright{
@@ -38103,7 +38418,7 @@
 /obj/item/plastique,
 /obj/item/plastique,
 /obj/item/plastique,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/red/full{
@@ -38135,10 +38450,10 @@
 /area/engineering/locker_room)
 "fNd" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window/southleft{
@@ -38207,7 +38522,7 @@
 /area/mine/unexplored/muriki/valleywest)
 "fNI" = (
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/blue/full{
@@ -38612,13 +38927,13 @@
 /turf/simulated/floor/tiled,
 /area/hallway/security/main)
 "fVR" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
@@ -38704,21 +39019,21 @@
 "fXt" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/muriki/crew/engyaid)
 "fYe" = (
 /obj/machinery/flasher/portable,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/effect/floor_decal/milspec/color/red/half{
 	dir = 8
 	},
@@ -38768,7 +39083,7 @@
 /obj/structure/window/reinforced{
 	health = 1e+006
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/red/full,
@@ -38904,6 +39219,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -39085,7 +39403,7 @@
 /turf/simulated/floor/water/acidic/indoor/turfpack/muriki,
 /area/muriki/processor/hall)
 "gdr" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
@@ -39096,14 +39414,14 @@
 /area/security/kennels)
 "gdK" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/gate/open{
 	dir = 4;
 	id = "cargolock";
@@ -39325,11 +39643,11 @@
 /area/muriki/tramstation/waste)
 "giN" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
@@ -39418,15 +39736,15 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
 "gjU" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -39529,7 +39847,7 @@
 "gmr" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/hallway/secondary/entry/docking_lounge)
 "gmG" = (
@@ -39838,7 +40156,7 @@
 /area/security/kennels)
 "grt" = (
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/eastright{
@@ -39851,7 +40169,7 @@
 /obj/item/shield/riot,
 /obj/item/melee/baton/loaded,
 /obj/effect/floor_decal/corner/red/full,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/tiled/dark,
 /area/security/tactical)
 "grI" = (
@@ -39929,7 +40247,7 @@
 /turf/simulated/floor/water/acidic/indoor/turfpack/muriki,
 /area/muriki/processor/hall/waterway_upper)
 "gty" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/table/reinforced,
@@ -40021,7 +40339,6 @@
 /area/muriki/tramstation/civ)
 "gvn" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/blast/gate/open{
 	dir = 2;
@@ -40031,6 +40348,7 @@
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/office)
 "gvH" = (
@@ -40185,8 +40503,8 @@
 /area/crew_quarters/kitchen)
 "gzw" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/muriki/arriveelev)
 "gzS" = (
@@ -40435,8 +40753,8 @@
 /area/security/security_aid_station)
 "gFI" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/muriki/crew/engyaid)
 "gFM" = (
@@ -40475,15 +40793,15 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/medbay)
 "gGp" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -40586,11 +40904,11 @@
 	name = "HoP Office Privacy Shutters";
 	opacity = 0
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -40828,6 +41146,7 @@
 	pixel_x = -28;
 	pixel_y = 27
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/milspec,
 /area/janitor)
 "gLT" = (
@@ -41125,7 +41444,7 @@
 /area/security/warden)
 "gSP" = (
 /obj/effect/floor_decal/milspec/color/red/half,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/table/rack/gun_rack/steel{
@@ -41606,7 +41925,7 @@
 /obj/machinery/computer/skills{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -41709,15 +42028,15 @@
 /area/medical/reception)
 "hcd" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/blast/gate/thin/open{
@@ -41794,6 +42113,9 @@
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 21
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/foyer)
@@ -42118,6 +42440,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/industrial/warning,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/quartermaster/foyer)
 "hhM" = (
@@ -42166,18 +42489,19 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/quartermaster/foyer)
 "him" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -42192,7 +42516,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/virology)
 "hjd" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/filingcabinet,
@@ -42328,7 +42652,7 @@
 "hlj" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining/prep)
 "hlw" = (
@@ -42437,10 +42761,6 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/crew_quarters/kitchen)
 "hmf" = (
-/obj/machinery/vending/deluxe_dinner/open{
-	dir = 8;
-	pixel_x = 8
-	},
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
@@ -42461,7 +42781,7 @@
 "hmw" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/chemistry)
 "hmD" = (
@@ -42705,9 +43025,6 @@
 /turf/simulated/floor,
 /area/maintenance/substation/phoronics)
 "hro" = (
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 1
 	},
@@ -42715,7 +43032,8 @@
 	dir = 1;
 	flags = null
 	},
-/obj/effect/landmark/holiday_event_spawn,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/plating,
 /area/muriki/tramstation/civ)
 "hrt" = (
@@ -42822,14 +43140,14 @@
 /area/crew_quarters/bar)
 "hso" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/glass,
@@ -43150,12 +43468,12 @@
 /area/storage/tools)
 "hzX" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -43203,13 +43521,13 @@
 /turf/simulated/floor/wood,
 /area/hallway/secondary/entry/docking_lounge)
 "hAu" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -43604,8 +43922,8 @@
 /obj/structure/table/rack,
 /obj/item/hoist_kit,
 /obj/item/hoist_kit,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window/northleft,
@@ -43730,15 +44048,15 @@
 /area/muriki/processor/hall)
 "hHA" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -44060,7 +44378,7 @@
 /area/rnd/breakroom)
 "hNA" = (
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/gloves/arm_guard/riot,
@@ -44072,7 +44390,7 @@
 /obj/effect/floor_decal/corner/red/full{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/light{
@@ -44591,11 +44909,11 @@
 /area/muriki/tramstation/civ)
 "hVK" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/blast/shutters{
@@ -44736,13 +45054,13 @@
 /turf/simulated/floor/plating,
 /area/maintenance/arrivals)
 "hXY" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -44776,10 +45094,7 @@
 "hYv" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full{
-	dir = 10;
-	icon_state = "fwindow"
-	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/crew_quarters/courtroom)
 "hYw" = (
@@ -44799,11 +45114,11 @@
 /turf/simulated/floor/tiled/yellow,
 /area/engineering/locker_room)
 "hYK" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/water/indoors,
@@ -44874,7 +45189,9 @@
 	},
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/obj/effect/floor_decal/industrial/warning/full,
+/obj/effect/floor_decal/corner/beige/full{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/milspec,
 /area/janitor)
 "hZL" = (
@@ -45018,7 +45335,7 @@
 "ibs" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/medical/virology/quarantine_airlock)
 "ibz" = (
@@ -45069,7 +45386,7 @@
 "icN" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/crew_quarters/bar)
 "icO" = (
@@ -45179,7 +45496,7 @@
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/cargeng)
 "idW" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/computer/supply_request_computeralt/medical,
@@ -45198,7 +45515,7 @@
 "iek" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/muriki/arriveproc)
 "iel" = (
@@ -45391,13 +45708,13 @@
 "igR" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -45579,10 +45896,10 @@
 "ikI" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/gate/open{
@@ -46073,9 +46390,7 @@
 /area/crew_quarters/bar)
 "isP" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/polarized/full{
-	id = "secbreak"
-	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/briefing_room)
 "itg" = (
@@ -46255,16 +46570,16 @@
 /turf/simulated/floor/plating,
 /area/maintenance/medbay_aft)
 "iwK" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -46817,13 +47132,13 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -47015,7 +47330,7 @@
 "iIB" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/corner/red/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/window/reinforced{
@@ -47075,7 +47390,7 @@
 "iJc" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/medical/medbay_primary_storage)
 "iJO" = (
@@ -47117,7 +47432,7 @@
 "iKi" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/security/security_processing)
 "iKo" = (
@@ -47324,14 +47639,14 @@
 /area/security/kennels)
 "iNJ" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
@@ -47571,7 +47886,7 @@
 "iTd" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/medbay_emt_bay)
 "iTh" = (
@@ -47914,7 +48229,7 @@
 "iZl" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/hallway/security/armor)
 "iZo" = (
@@ -48133,16 +48448,16 @@
 /turf/simulated/floor/tiled/milspec,
 /area/engineering/storage)
 "jck" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -48255,24 +48570,15 @@
 /turf/simulated/floor/outdoors/rocks/turfpack/muriki,
 /area/mine/unexplored/muriki/valleywest)
 "jfF" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "meet_window_tint"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 1;
-	id = "meet_window_tint"
-	},
 /obj/machinery/door/firedoor/glass,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
+/obj/structure/grille,
+/obj/structure/window/reinforced/holiday{
+	dir = 1
 	},
-/turf/simulated/floor,
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
 /area/crew_quarters/courtroom)
 "jgx" = (
 /obj/effect/floor_decal/borderfloor{
@@ -49032,11 +49338,11 @@
 /area/maintenance/substation/engineering)
 "jtf" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only,
@@ -49370,10 +49676,10 @@
 /obj/effect/floor_decal/corner/red/full{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/gloves/arm_guard/riot,
@@ -50226,10 +50532,10 @@
 "jMZ" = (
 /obj/structure/closet/toolcloset,
 /obj/item/flashlight,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/multitool{
@@ -50591,6 +50897,9 @@
 /obj/effect/floor_decal/corner/lightgrey/border{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/civ)
 "jUF" = (
@@ -50641,10 +50950,10 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -50776,7 +51085,7 @@
 /turf/simulated/floor/outdoors/ice/turfpack/muriki,
 /area/muriki/grounds/shutt)
 "jYp" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/red{
@@ -50963,13 +51272,13 @@
 "kaC" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
@@ -51632,11 +51941,11 @@
 /area/maintenance/medbay_aft)
 "kjx" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -51869,10 +52178,10 @@
 "knO" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -52099,10 +52408,10 @@
 /area/hallway/security/main)
 "krf" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
@@ -52164,11 +52473,11 @@
 /area/hallway/primary/aft)
 "kss" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/blast/gate/thin/open{
@@ -52181,7 +52490,7 @@
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -52529,6 +52838,7 @@
 	id = "cargolock";
 	name = "Cargo Lockdown"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/janitor)
 "kAu" = (
@@ -52550,7 +52860,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/railing{
@@ -52637,10 +52947,11 @@
 /turf/simulated/wall/r_wall,
 /area/maintenance/engineering)
 "kDw" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/hologram/holopad,
+/obj/structure/disposalpipe/junction{
+	dir = 4;
+	icon_state = "pipe-j2"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/maintenance/disposal)
 "kDA" = (
@@ -52704,7 +53015,7 @@
 "kDU" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/sleeper)
 "kEh" = (
@@ -52826,10 +53137,10 @@
 /turf/simulated/floor/wood,
 /area/medical/psych)
 "kHk" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/item/toy/chewtoy,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -53023,7 +53334,7 @@
 /turf/simulated/floor/tiled,
 /area/muriki/crew/engyaid)
 "kKh" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -53439,16 +53750,16 @@
 	},
 /area/engineering/engine_room)
 "kQX" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -53497,7 +53808,7 @@
 /turf/simulated/floor/outdoors/ice/dark/turfpack/muriki,
 /area/muriki/grounds/engi)
 "kRQ" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
@@ -53531,8 +53842,8 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -53576,10 +53887,10 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -53678,11 +53989,11 @@
 /turf/simulated/wall/r_wall,
 /area/medical/virology/quarantine_airlock)
 "kVH" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
@@ -53934,12 +54245,12 @@
 /area/muriki/tramstation/waste)
 "laG" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/blast/gate/thin/open{
@@ -54038,13 +54349,13 @@
 "lcv" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
@@ -54165,10 +54476,10 @@
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/engineering_hallway)
 "lfk" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
 /turf/simulated/floor/plating,
@@ -54466,7 +54777,7 @@
 /turf/simulated/floor/reinforced,
 /area/muriki/tramstation/civ)
 "lkn" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/photocopier,
@@ -54806,19 +55117,19 @@
 /turf/simulated/floor/tiled,
 /area/security/lobby)
 "lqZ" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -54918,7 +55229,7 @@
 /area/maintenance/scielev)
 "lsB" = (
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/shoes/magboots,
@@ -55015,7 +55326,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/security/main)
 "ltU" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/item/toy/tennis/yellow,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -55188,7 +55499,7 @@
 	layer = 2.6
 	},
 /obj/item/clothing/suit/space/void/engineering,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/window/northright{
@@ -55202,10 +55513,10 @@
 /area/engineering/hardsuitstore)
 "lxj" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/cable/green{
 	icon_state = "0-4"
@@ -55388,7 +55699,7 @@
 /area/medical/medbay3)
 "lzR" = (
 /obj/machinery/computer/security/mining,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -55532,10 +55843,10 @@
 /turf/simulated/wall/r_wall,
 /area/quartermaster/delivery)
 "lBA" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -55774,7 +56085,7 @@
 /area/muriki/tramstation/civ)
 "lFs" = (
 /obj/structure/closet/secure_closet/engineering_welding,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
@@ -55956,12 +56267,12 @@
 /area/medical/locker)
 "lIY" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -56098,13 +56409,14 @@
 /turf/simulated/floor/tiled,
 /area/security/lobby)
 "lMp" = (
-/obj/structure/railing,
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 1
 	},
+/obj/machinery/disposal,
+/obj/structure/window/reinforced/holiday{
+	dir = 1
+	},
+/obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/plating,
 /area/muriki/tramstation/civ)
 "lMu" = (
@@ -56456,8 +56768,8 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -56471,10 +56783,10 @@
 "lTb" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/gate/open{
 	dir = 4;
 	id = "cargolock";
@@ -56620,11 +56932,11 @@
 "lUW" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -56821,11 +57133,11 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -56936,15 +57248,15 @@
 /area/maintenance/medbay_aft)
 "maY" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -56962,10 +57274,10 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/muriki/bathroom/bridge)
 "mbh" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
 /obj/structure/cable/green{
@@ -57193,7 +57505,7 @@
 	dir = 4;
 	id = "mining_internal"
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/plasticflaps/mining,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/mining/processing)
@@ -57229,14 +57541,14 @@
 /area/medical/locker)
 "mfa" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/glass,
@@ -57335,14 +57647,14 @@
 /area/muriki/cybstorage)
 "mgv" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/glass,
@@ -57529,7 +57841,6 @@
 /area/crew_quarters/courtroom)
 "miB" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
 /obj/machinery/door/blast/gate/open{
 	dir = 4;
 	id = "englockdown";
@@ -57542,6 +57853,7 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/engineering/foyer)
 "miD" = (
@@ -57592,10 +57904,10 @@
 	dir = 8
 	},
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/window/brigdoor/northleft{
 	name = "Tear Gas Grenades";
 	req_access = list(2);
@@ -57631,7 +57943,7 @@
 "mlS" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/brig/observation)
 "mms" = (
@@ -57807,7 +58119,7 @@
 "mrc" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/detectives_office)
 "mrh" = (
@@ -57850,11 +58162,11 @@
 "mrE" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -57908,7 +58220,7 @@
 "mta" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/hallway/primary/central_two)
 "mte" = (
@@ -57963,7 +58275,7 @@
 	pixel_x = -30;
 	pixel_y = -7
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/effect/floor_decal/eshui/emblem/eshui_l,
@@ -58113,11 +58425,10 @@
 	opacity = 0
 	},
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/glass,
@@ -58125,6 +58436,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor,
 /area/engineering/corepower)
 "mxR" = (
@@ -58152,9 +58464,8 @@
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/yellow{
@@ -58167,6 +58478,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor,
 /area/engineering/corepower)
 "myT" = (
@@ -58454,11 +58766,11 @@
 "mCR" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -58629,10 +58941,10 @@
 "mGb" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/northleft{
@@ -58925,7 +59237,7 @@
 "mMk" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/bridge/hallway)
 "mMA" = (
@@ -59035,11 +59347,11 @@
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/sec)
 "mQr" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/water/indoors,
@@ -59403,11 +59715,11 @@
 	id = "security_lockdown";
 	name = "Security Lockdown"
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -59607,7 +59919,7 @@
 "naj" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining/firstaid)
 "nan" = (
@@ -59706,11 +60018,11 @@
 /area/security/security_processing)
 "ncs" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -60514,11 +60826,11 @@
 /area/medical/virologyaccess)
 "nqB" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/sign/redcross{
 	name = "FirstAid"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/crew/baraid)
 "nqW" = (
@@ -60888,17 +61200,17 @@
 /area/hallway/primary/central_one)
 "nvZ" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
@@ -61074,14 +61386,14 @@
 /area/storage/tech)
 "nzo" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -61092,7 +61404,7 @@
 /area/security/lobby)
 "nzR" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining/processing)
 "nzU" = (
@@ -61241,16 +61553,16 @@
 	icon_state = "1-2"
 	},
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/plating,
 /area/hallway/primary/central_one)
@@ -61576,15 +61888,15 @@
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/yellow,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor,
 /area/engineering/corepower)
 "nJX" = (
@@ -61654,8 +61966,8 @@
 "nLM" = (
 /obj/structure/closet/toolcloset,
 /obj/item/flashlight,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/multitool{
@@ -62026,13 +62338,13 @@
 "nVI" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -62648,7 +62960,7 @@
 /turf/simulated/floor/reinforced,
 /area/muriki/tramstation/civ)
 "ofT" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/effect/landmark/holiday_event_spawn,
@@ -62835,7 +63147,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/virology/prep)
 "okE" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/item/trash/bowl,
@@ -62931,7 +63243,7 @@
 /obj/structure/cable/orange{
 	icon_state = "2-8"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/rnd/production/protolathe/department/security,
@@ -63126,7 +63438,7 @@
 /obj/item/blade_trap_kit,
 /obj/item/blade_trap_kit,
 /obj/item/blade_trap_kit,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/southleft{
@@ -64042,17 +64354,17 @@
 /area/quartermaster/office)
 "oGR" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/tramstation/cargeng)
 "oGS" = (
@@ -64142,8 +64454,8 @@
 /area/maintenance/disposal)
 "oJb" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/storage/tools)
 "oJu" = (
@@ -64512,14 +64824,14 @@
 /area/engineering/storage)
 "oNc" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/door/blast/shutters{
@@ -65183,14 +65495,14 @@
 /area/hallway/security/armor)
 "oZA" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -65214,24 +65526,15 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/muriki/processor/euth)
 "pbd" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "meet_window_tint"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 4;
-	id = "meet_window_tint"
-	},
 /obj/machinery/door/firedoor/glass,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
+/obj/structure/grille,
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 8
 	},
-/turf/simulated/floor,
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
 /area/crew_quarters/courtroom)
 "pbl" = (
 /obj/structure/cable/green{
@@ -65472,10 +65775,10 @@
 "pgj" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -66175,7 +66478,7 @@
 	id = "secmail"
 	},
 /obj/structure/plasticflaps/mining,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -66321,9 +66624,8 @@
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/yellow{
@@ -66332,6 +66634,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor,
 /area/engineering/corepower)
 "pyL" = (
@@ -66518,7 +66821,7 @@
 /area/quartermaster/mining)
 "pBq" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "pBF" = (
@@ -66654,12 +66957,12 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/enginestorage)
 "pEf" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -66865,27 +67168,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/tactical)
 "pHQ" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/polarized{
-	id = "meet_window_tint"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 4;
-	id = "meet_window_tint"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 1;
-	id = "meet_window_tint"
+/obj/structure/window/reinforced/holiday{
+	dir = 1
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
+/obj/structure/grille,
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 4
 	},
-/turf/simulated/floor,
+/turf/simulated/floor/plating,
 /area/crew_quarters/courtroom)
 "pHW" = (
 /obj/structure/bed/chair,
@@ -67578,8 +67870,8 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/medical/medbay_emt_bay)
 "pVB" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/table/rack,
@@ -67606,12 +67898,12 @@
 /turf/simulated/floor/tiled/milspec,
 /area/security/armoury)
 "pVL" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/grille,
@@ -67645,7 +67937,7 @@
 /obj/machinery/disposal/deliveryChute{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/disposalpipe/trunk,
 /obj/structure/sign/warning/mail_delivery{
 	name = "\improper DELIVERS TO WAREHOUSE";
@@ -67720,7 +68012,7 @@
 /area/mine/unexplored/muriki/mountaineast)
 "pXs" = (
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/window/westright{
@@ -67840,11 +68132,11 @@
 "qap" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -68114,8 +68406,8 @@
 	id = "warehouse";
 	name = "Warehouse Shutters"
 	},
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/quartermaster/storage)
 "qeX" = (
@@ -68138,7 +68430,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/light,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/gloves/black,
@@ -68194,7 +68486,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/gloves/black,
@@ -68245,31 +68537,31 @@
 /area/quartermaster/delivery)
 "qhQ" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining)
 "qhW" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -68360,9 +68652,9 @@
 /area/quartermaster/mining/prep)
 "qjw" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/border_only,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -69211,16 +69503,16 @@
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
@@ -69440,12 +69732,12 @@
 /area/hallway/primary/central_two)
 "qCC" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -69612,13 +69904,13 @@
 /turf/simulated/floor/tiled/milspec,
 /area/security/mechent)
 "qFo" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -69694,7 +69986,7 @@
 "qGk" = (
 /obj/structure/closet/l3closet/security,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/milspec,
@@ -69996,24 +70288,15 @@
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/central_two)
 "qMp" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/polarized{
-	dir = 4;
-	id = "meet_window_tint"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 1;
-	id = "meet_window_tint"
-	},
 /obj/machinery/door/firedoor/glass,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
+/obj/structure/grille,
+/obj/structure/window/reinforced/holiday{
+	dir = 1
 	},
-/turf/simulated/floor,
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
 /area/crew_quarters/courtroom)
 "qMq" = (
 /obj/effect/floor_decal/corner/beige/full{
@@ -70113,10 +70396,10 @@
 /obj/effect/floor_decal/corner/green/full{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/southleft{
@@ -70243,7 +70526,7 @@
 /area/maintenance/substation/phoronics)
 "qPE" = (
 /obj/machinery/computer/supplycomp/control,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/brown{
@@ -70387,7 +70670,7 @@
 "qQS" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/security_aid_station)
 "qQX" = (
@@ -70860,10 +71143,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/office)
-"rby" = (
-/obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/steel_grid,
-/area/hallway/secondary/exit)
 "rbJ" = (
 /obj/machinery/door/airlock/maintenance/int,
 /turf/simulated/floor/plating/turfpack/muriki,
@@ -70962,17 +71241,17 @@
 /area/hallway/secondary/engineering_hallway)
 "reZ" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/gate/open{
 	dir = 8;
 	id = "cargolock";
@@ -71108,7 +71387,7 @@
 	dir = 8;
 	layer = 2.9
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/clothing/shoes/magboots,
@@ -71225,7 +71504,7 @@
 	dir = 8;
 	layer = 2.9
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/item/clothing/shoes/magboots,
@@ -71414,7 +71693,7 @@
 	dir = 8;
 	layer = 2.6
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/item/tank/jetpack/carbondioxide,
@@ -71640,15 +71919,6 @@
 /obj/effect/landmark/holiday_event_spawn,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway)
-"rsn" = (
-/obj/effect/floor_decal/borderfloor/corner{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/lightgrey/bordercorner{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/secondary/exit)
 "rtb" = (
 /obj/item/clothing/shoes/leg_guard/combat,
 /obj/item/clothing/shoes/leg_guard/combat,
@@ -71851,13 +72121,13 @@
 /turf/simulated/floor/wood,
 /area/mine/unexplored/muriki/mountainnorth)
 "rvT" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -72229,23 +72499,16 @@
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/cargeng)
 "rDF" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
+	},
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 4
+	},
+/obj/structure/window/reinforced/holiday{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/recreation_area)
@@ -72402,7 +72665,7 @@
 /obj/effect/floor_decal/corner/green/full{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/window/reinforced{
@@ -72455,10 +72718,10 @@
 "rHf" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -72689,13 +72952,14 @@
 "rMu" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/brown/border,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/sign/scenery/map/right_outpost21{
 	pixel_y = -32
 	},
 /obj/machinery/light,
+/obj/structure/disposalpipe/junction{
+	dir = 4;
+	icon_state = "pipe-j2"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/maintenance/disposal)
 "rML" = (
@@ -72786,11 +73050,11 @@
 	name = "Virology Emergency Quarantine Blast Doors";
 	opacity = 0
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -72956,12 +73220,17 @@
 /area/maintenance/wastedisposal)
 "rQT" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
 /obj/structure/cable/green,
+/obj/structure/window/reinforced/full/holiday,
+/obj/machinery/door/blast/gate/open{
+	dir = 2;
+	id = "englockdown";
+	name = "Engineering Lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/engineering/foyer)
 "rRm" = (
@@ -73121,8 +73390,8 @@
 /area/hallway/secondary/entry/docking_lounge)
 "rTY" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/engineering/break_room)
 "rUQ" = (
@@ -73241,7 +73510,7 @@
 "rWl" = (
 /obj/machinery/flasher/portable,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/tiled/milspec,
 /area/security/armoury)
 "rWG" = (
@@ -73800,7 +74069,7 @@
 "seC" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/hallway/primary/aft)
 "seG" = (
@@ -74115,16 +74384,16 @@
 "smw" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
@@ -74377,11 +74646,10 @@
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/yellow{
@@ -74390,6 +74658,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor,
 /area/engineering/corepower)
 "sro" = (
@@ -74899,10 +75168,10 @@
 "sCB" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green,
@@ -75376,7 +75645,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/exit)
 "sKe" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/light{
@@ -75487,7 +75756,7 @@
 	layer = 2.6
 	},
 /obj/item/clothing/suit/space/void/engineering,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window/northleft{
@@ -75768,14 +76037,14 @@
 /area/crew_quarters/cafeteria)
 "sSN" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/arriveproc)
 "sTc" = (
@@ -75836,13 +76105,13 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/muriki/bathroom/bar)
 "sTE" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -76061,11 +76330,11 @@
 /area/security/briefing_room)
 "sXk" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/blast/gate/open{
@@ -76326,11 +76595,11 @@
 /area/hallway/secondary/engineering_hallway)
 "tbP" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/sign/redcross{
 	name = "FirstAid"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/first_aid_station)
 "tbW" = (
@@ -76386,11 +76655,11 @@
 /area/muriki/tramstation/civ)
 "tcf" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/first_aid_station)
 "tco" = (
@@ -76602,6 +76871,9 @@
 	c_tag = "CIV - Engineering Tram Northwest";
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/muriki/tramstation/cargeng)
 "tfr" = (
@@ -76688,10 +76960,10 @@
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/central_three)
 "tho" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
 /obj/machinery/door/blast/gate/thin/open{
@@ -76843,8 +77115,8 @@
 /area/quartermaster/mining/processing)
 "tkR" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/engineering/hardsuitstore)
 "tkV" = (
@@ -77128,10 +77400,10 @@
 "tqt" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
@@ -77143,7 +77415,7 @@
 "tqv" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/engineering/storage)
 "tqD" = (
@@ -77288,13 +77560,13 @@
 "ttF" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -77413,10 +77685,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/central_two)
-"tvL" = (
-/mob/living/simple_mob/vore/horse/kelpie,
-/turf/simulated/floor/outdoors/shelfice/turfpack/muriki,
-/area/mine/unexplored/muriki/valleyeast)
 "tvM" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -77447,11 +77715,11 @@
 /area/hallway/security/main)
 "twa" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -77653,7 +77921,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/exam_room)
 "tzS" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/item/trash/bowl,
@@ -77784,15 +78052,15 @@
 /area/security/briefing_room)
 "tBQ" = (
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/window/brigdoor/northleft{
 	name = "Weapons locker";
 	req_access = list(2)
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -77844,7 +78112,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -78109,14 +78377,14 @@
 "tHl" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -78458,10 +78726,10 @@
 "tOp" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/shutters{
 	closed_layer = 10;
 	density = 0;
@@ -78769,11 +79037,8 @@
 /turf/simulated/floor/carpet/turcarpet,
 /area/hallway/secondary/entry/docking_lounge)
 "tTe" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
-	},
-/obj/structure/window/reinforced{
-	health = 1e+006
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille{
@@ -78786,9 +79051,10 @@
 /obj/structure/cable/orange{
 	icon_state = "0-4"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/security/tactical/red)
 "tTf" = (
@@ -78933,14 +79199,14 @@
 /area/hallway/primary/central_three)
 "tVm" = (
 /obj/structure/table/rack,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/door/window{
 	dir = 1;
 	req_one_access = list(31,48)
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/item/clothing/shoes/magboots,
@@ -79159,12 +79425,12 @@
 /area/mine/unexplored/muriki/mountainnorth)
 "tYr" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/border_only,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -79258,7 +79524,7 @@
 /turf/simulated/wall/r_wall,
 /area/muriki/bathroom/virology)
 "tZH" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/red{
@@ -79372,14 +79638,14 @@
 /area/hallway/primary/central_two)
 "ucr" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -79648,7 +79914,7 @@
 /obj/effect/floor_decal/milspec/color/red/half{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/table/rack,
 /obj/item/storage/box/empslite{
 	pixel_x = 2;
@@ -79685,7 +79951,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/storage/pouch/baton,
@@ -79785,19 +80051,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/delivery)
-"uic" = (
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/warning/dust{
-	dir = 1
-	},
-/obj/effect/landmark/holiday_event_spawn,
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
-/area/muriki/tramstation/waste)
 "uik" = (
 /mob/living/simple_mob/vore/alienanimals/jil,
 /turf/simulated/floor/flesh/turfpack/muriki,
@@ -79975,12 +80228,12 @@
 /area/muriki/crew/engyaid)
 "ulw" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -79991,9 +80244,8 @@
 /turf/simulated/floor/outdoors/snow/newdirt_under/turfpack/muriki,
 /area/muriki/grounds/terraform)
 "ulQ" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
+/obj/structure/disposalpipe/junction{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/milspec,
 /area/janitor)
@@ -80161,15 +80413,15 @@
 /area/crew_quarters/bar)
 "upr" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -80667,10 +80919,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/sleeper)
 "uyy" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -80731,14 +80983,14 @@
 	},
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -80818,13 +81070,12 @@
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/engineering_hallway)
 "uAf" = (
-/obj/structure/railing{
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/warning/dust,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/tramstation/civ)
 "uAB" = (
@@ -80864,11 +81115,11 @@
 	},
 /area/quartermaster/office)
 "uAW" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -81041,17 +81292,17 @@
 /area/mine/explored/muriki/river/hole)
 "uEL" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
@@ -81316,7 +81567,7 @@
 /turf/simulated/floor/tiled/kafel_full,
 /area/crew_quarters/kitchen)
 "uIj" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/filingcabinet,
@@ -81545,10 +81796,10 @@
 "uMA" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -81649,7 +81900,7 @@
 /area/hallway/secondary/engineering_hallway)
 "uOj" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/plating,
 /area/rnd/breakroom)
@@ -81971,13 +82222,13 @@
 "uVp" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -82675,11 +82926,11 @@
 	name = "HoP Office Privacy Shutters";
 	opacity = 0
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -82904,11 +83155,8 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/muriki/crew/casino)
 "vml" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
-	},
-/obj/structure/window/reinforced{
-	health = 1e+006
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille{
@@ -82920,9 +83168,10 @@
 /obj/structure/cable/orange{
 	icon_state = "0-8"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/security/tactical/red)
 "vmm" = (
@@ -83054,7 +83303,7 @@
 /area/muriki/tramstation/cargeng)
 "vpy" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/crew_quarters/kitchen)
 "vpz" = (
@@ -83387,13 +83636,13 @@
 "vwb" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
@@ -83535,7 +83784,7 @@
 "vyE" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining/processing)
 "vyG" = (
@@ -83650,7 +83899,7 @@
 "vAe" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/security/kennels)
 "vAg" = (
@@ -83705,10 +83954,10 @@
 /area/security/evidence_storage)
 "vAC" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/cable/green{
 	icon_state = "0-4"
@@ -83732,11 +83981,11 @@
 /area/bridge)
 "vAT" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/sign/redcross{
 	name = "FirstAid"
 	},
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/muriki/crew/engyaid)
 "vBb" = (
@@ -83764,7 +84013,7 @@
 "vBg" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/security_equiptment_storage)
 "vBp" = (
@@ -83836,7 +84085,7 @@
 	name = "\improper ARMORY";
 	pixel_x = -32
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/table/rack,
@@ -83968,10 +84217,10 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/foyer)
 "vFd" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
@@ -84034,7 +84283,7 @@
 /obj/structure/window/reinforced{
 	health = 1e+006
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/northright{
@@ -84509,14 +84758,14 @@
 /area/medical/sleeper)
 "vNp" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/plating,
 /area/hallway/secondary/entry/docking_lounge)
 "vOi" = (
@@ -84582,7 +84831,7 @@
 /turf/simulated/floor/wood,
 /area/engineering/break_room)
 "vOO" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/red{
@@ -84630,8 +84879,8 @@
 	id = "warehouse";
 	name = "Warehouse Shutters"
 	},
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/warehouse)
 "vPp" = (
@@ -84936,10 +85185,10 @@
 "vVi" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green,
 /obj/structure/cable/green{
 	icon_state = "0-4"
@@ -84947,7 +85196,7 @@
 /turf/simulated/floor/plating,
 /area/engineering/eva)
 "vVp" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/item/trash/unajerky,
@@ -85043,12 +85292,12 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/security/detectives_office)
 "vXn" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/grille,
@@ -85172,12 +85421,10 @@
 "vYI" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/polarized/full{
-	id = "qmpriv"
-	},
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/delivery)
 "vYP" = (
@@ -85382,7 +85629,7 @@
 /obj/item/storage/firstaid/toxin,
 /obj/item/storage/firstaid/o2,
 /obj/item/storage/firstaid/o2,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/effect/floor_decal/eshui/emblem/eshui_r,
@@ -85417,15 +85664,13 @@
 "wbD" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/polarized/full{
-	id = "qmpriv"
-	},
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/qm)
 "wbE" = (
@@ -85733,7 +85978,7 @@
 	dir = 8
 	},
 /obj/structure/reagent_dispensers/water_cooler/full,
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /turf/simulated/floor/tiled/white,
 /area/medical/reception)
 "wgY" = (
@@ -86117,16 +86362,16 @@
 /turf/simulated/floor/wood,
 /area/lawoffice)
 "wmZ" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -86236,7 +86481,7 @@
 /area/hallway/secondary/exit)
 "wpO" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/hallway/secondary/engineering_hallway)
 "wqk" = (
@@ -86357,14 +86602,14 @@
 /area/quartermaster/qm)
 "wso" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/blast/shutters{
 	closed_layer = 10;
 	density = 0;
@@ -86396,7 +86641,7 @@
 /turf/simulated/floor/wood,
 /area/mine/unexplored/muriki/mountainnorth)
 "wsJ" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/machinery/hologram/holopad,
@@ -87140,17 +87385,17 @@
 /area/mine/unexplored/muriki/mountaineast)
 "wId" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green,
 /obj/structure/cable/green{
 	icon_state = "0-2"
@@ -87634,7 +87879,7 @@
 "wQx" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/security/briefing_room)
 "wQz" = (
@@ -87648,8 +87893,8 @@
 /area/muriki/tramstation/cargeng)
 "wQC" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/medical/first_aid_station)
 "wRj" = (
@@ -88141,7 +88386,6 @@
 /area/mine/unexplored/muriki/mountaineast)
 "wXr" = (
 /obj/structure/grille,
-/obj/structure/window/basic/full,
 /obj/machinery/door/blast/gate/open{
 	dir = 2;
 	id = "englockdown";
@@ -88151,6 +88395,7 @@
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/engineering/foyer)
 "wXv" = (
@@ -88225,7 +88470,7 @@
 	req_one_access = list(1);
 	name = "LMG cabinet"
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/red,
@@ -88258,15 +88503,15 @@
 /area/medical/sleeper)
 "wYZ" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -88282,10 +88527,10 @@
 "wZB" = (
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/structure/cable/green,
@@ -88348,7 +88593,7 @@
 /obj/structure/window/reinforced{
 	health = 1e+006
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/white{
@@ -88493,7 +88738,7 @@
 	dir = 8;
 	layer = 2.6
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/tank/jetpack/carbondioxide,
@@ -88574,23 +88819,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/engineering)
 "xej" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/polarized{
-	id = "meet_window_tint"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 4;
-	id = "meet_window_tint"
-	},
 /obj/machinery/door/firedoor/glass,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
+/obj/structure/grille,
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
+	dir = 4
 	},
-/turf/simulated/floor,
+/turf/simulated/floor/plating,
 /area/crew_quarters/courtroom)
 "xek" = (
 /obj/item/geiger/wall/south,
@@ -88620,7 +88855,7 @@
 /area/quartermaster/office)
 "xex" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/delivery)
 "xeE" = (
@@ -89025,16 +89260,16 @@
 "xmb" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
@@ -89082,7 +89317,7 @@
 "xmK" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/crew_quarters/kitchen)
 "xmW" = (
@@ -89513,8 +89748,8 @@
 /area/engineering/break_room)
 "xvI" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/shuttle/trawler)
 "xvZ" = (
@@ -89561,6 +89796,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/milspec,
 /area/janitor)
@@ -89746,12 +89985,10 @@
 "xAo" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/polarized/full{
-	id = "qmpriv"
-	},
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/qm)
 "xAz" = (
@@ -89818,7 +90055,7 @@
 "xBt" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/northleft{
@@ -90077,16 +90314,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/hos)
 "xHg" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -90137,15 +90374,15 @@
 /turf/simulated/flesh,
 /area/muriki/processor/pools/cropbig)
 "xHL" = (
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -90262,13 +90499,13 @@
 	id = "security_lockdown";
 	name = "Security Lockdown"
 	},
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/security/lobby)
 "xKW" = (
@@ -90311,7 +90548,7 @@
 /area/bridge/hallway)
 "xLX" = (
 /obj/structure/table/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
 /obj/item/flashlight/lamp/green{
@@ -90474,7 +90711,7 @@
 /area/engineering/storage)
 "xPK" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -90530,10 +90767,10 @@
 /area/muriki/cybstorage)
 "xQN" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -90557,12 +90794,12 @@
 /area/muriki/bathroom/security)
 "xRe" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
 /obj/structure/cable/green{
@@ -90594,8 +90831,8 @@
 "xRj" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/basic/full,
 /obj/structure/sign/department/ass,
+/obj/structure/window/reinforced/full/holiday/vertical,
 /turf/simulated/floor/plating,
 /area/engineering/storage)
 "xRk" = (
@@ -90608,8 +90845,8 @@
 /area/engineering/locker_room)
 "xRy" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/muriki/crew/baraid)
 "xRP" = (
@@ -90915,11 +91152,11 @@
 "xVL" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday,
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday/vertical{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -91498,10 +91735,10 @@
 "yiH" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced/full,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
+/obj/structure/window/reinforced/full/holiday,
 /turf/simulated/floor/plating,
 /area/quartermaster/mining)
 "yiY" = (
@@ -91626,10 +91863,10 @@
 "ykJ" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/glass,
-/obj/structure/window/reinforced{
+/obj/structure/window/reinforced/holiday{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced/holiday,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
@@ -93338,7 +93575,7 @@ aGP
 aGP
 aGP
 aGP
-eoE
+aFQ
 uBv
 axk
 xzw
@@ -94634,10 +94871,10 @@ aGP
 aGP
 aGP
 aGP
-gIo
-sBU
-vaN
-kXY
+aFU
+aFF
+aFA
+aFz
 rMu
 ikC
 hMt
@@ -94796,7 +95033,7 @@ aGP
 aGP
 aGP
 aGP
-gAF
+aGj
 sBU
 vaN
 ulW
@@ -95606,10 +95843,10 @@ aGP
 aGP
 aGP
 aGP
-uic
-sBU
-vaN
-kXY
+aFU
+aFF
+aFA
+aFz
 kDw
 abd
 dLx
@@ -96902,7 +97139,7 @@ aGP
 aGP
 aGP
 aGP
-gAF
+aGl
 sBU
 vaN
 kXY
@@ -97401,8 +97638,8 @@ vyE
 kZP
 arE
 arD
-nzR
-nzR
+atg
+atg
 ula
 nzR
 uLD
@@ -98211,8 +98448,8 @@ sAx
 mep
 vfh
 ceo
-nzR
-nzR
+atg
+atg
 wUD
 nzR
 uLD
@@ -99827,7 +100064,7 @@ lpE
 avu
 wCM
 tVm
-naj
+ath
 eIa
 fcb
 wlY
@@ -99989,7 +100226,7 @@ aUZ
 hpI
 wCM
 tVm
-naj
+ath
 hws
 boN
 jWE
@@ -100151,7 +100388,7 @@ sMt
 hpI
 wCM
 tVm
-naj
+ath
 wrx
 gaU
 iya
@@ -111442,7 +111679,7 @@ aie
 wXr
 osD
 ahX
-iHl
+aIu
 ahV
 ahV
 ahV
@@ -111454,7 +111691,7 @@ ahV
 ahV
 ahV
 ahV
-mgo
+aHF
 npt
 tXP
 jzH
@@ -111905,7 +112142,7 @@ qAc
 qAc
 aeL
 qAc
-wQC
+aDx
 wtE
 tbP
 vYR
@@ -112737,8 +112974,8 @@ occ
 miB
 rQT
 ahQ
-ahX
-wre
+aJj
+aIv
 ahV
 ahV
 ahV
@@ -112751,7 +112988,7 @@ ahV
 ahV
 ahV
 ape
-npt
+aGz
 rzp
 aNI
 uMJ
@@ -112899,8 +113136,8 @@ ahn
 ahF
 ahF
 ahS
-ahX
-iHl
+aJr
+aIw
 ahV
 ahV
 ahV
@@ -112913,7 +113150,7 @@ ahV
 ahV
 ahV
 apt
-npt
+aGY
 rzp
 qAP
 pZn
@@ -113080,7 +113317,7 @@ rzp
 anJ
 pZn
 kiM
-myk
+aGv
 mJp
 uMJ
 uMJ
@@ -113222,8 +113459,8 @@ ahk
 ahp
 ahH
 ahH
-ahI
-ahX
+aJH
+aJt
 qSz
 ahV
 ahV
@@ -113547,7 +113784,7 @@ ahr
 ahJ
 ahI
 ahI
-ahX
+aJr
 apx
 ahV
 ahV
@@ -113561,7 +113798,7 @@ ahV
 ahV
 ahV
 apu
-npt
+aGY
 amx
 obD
 pZn
@@ -113709,7 +113946,7 @@ ahs
 ahI
 amv
 ahI
-ahX
+aJB
 apz
 ahV
 ahV
@@ -113722,8 +113959,8 @@ ahV
 ahV
 ahV
 ahV
-apv
-npt
+ape
+aHi
 tXP
 mQR
 pZn
@@ -114682,7 +114919,7 @@ ahI
 ahI
 ahI
 aih
-iHl
+aIu
 ahV
 ahV
 ahV
@@ -114694,7 +114931,7 @@ ahV
 ahV
 ahV
 ahV
-mgo
+aHF
 oum
 tXP
 tXP
@@ -115357,7 +115594,7 @@ iGv
 iGv
 iGv
 iGv
-qeQ
+atM
 qeQ
 tXC
 rIv
@@ -121146,7 +121383,7 @@ ara
 ara
 ara
 ara
-ara
+aET
 ara
 ara
 ara
@@ -123257,9 +123494,9 @@ ara
 ara
 ara
 ara
-ara
-ara
-ara
+aET
+aET
+aET
 ara
 ara
 fxo
@@ -123418,11 +123655,11 @@ fxo
 ara
 ara
 ara
-ara
-ara
-ara
-ara
-ara
+aET
+aJN
+aJT
+aJN
+aET
 ara
 fxo
 aqq
@@ -123580,11 +123817,11 @@ fxo
 ara
 ara
 ara
-ara
-ara
-ara
-ara
-ara
+aET
+aKl
+aJZ
+aJN
+apv
 ara
 ara
 aqq
@@ -123742,11 +123979,11 @@ fxo
 ara
 ara
 ara
-ara
-ara
-ara
-ara
-ara
+aET
+aKo
+aKf
+aJN
+aET
 ara
 ara
 aHB
@@ -123883,7 +124120,6 @@ ara
 ara
 ara
 ara
-aOW
 ara
 ara
 ara
@@ -123893,21 +124129,22 @@ ara
 ara
 ara
 ara
-ara
-ara
-ara
-fxo
-fxo
 ara
 ara
 ara
 ara
 fxo
 fxo
+ara
+ara
+ara
+ara
 fxo
-ara
-ara
-ara
+fxo
+fxo
+aET
+aET
+aET
 ara
 ara
 ara
@@ -124048,7 +124285,7 @@ aOV
 aOV
 aOV
 aOV
-aDB
+aOV
 aOV
 aOV
 aOV
@@ -125728,7 +125965,7 @@ dfb
 rjA
 tlM
 iEL
-mrc
+ati
 ilf
 jSQ
 oQX
@@ -125890,7 +126127,7 @@ dfb
 uBM
 auL
 qbJ
-mrc
+ati
 nRr
 hBZ
 lLZ
@@ -126052,7 +126289,7 @@ dfb
 jYp
 kux
 bNP
-mrc
+ati
 xTt
 kkn
 lLZ
@@ -126169,8 +126406,8 @@ ybq
 ybq
 ybq
 cMN
-cMN
-cMN
+aJx
+aJx
 cMN
 cMN
 wdK
@@ -126330,9 +126567,9 @@ aJx
 aJx
 aJx
 ybq
-ybq
-ybq
 aJx
+arf
+arf
 aJx
 lve
 qvv
@@ -126492,9 +126729,9 @@ aJx
 aJx
 aJx
 aJx
-aJx
-aJx
-aJx
+arf
+arf
+aFr
 lve
 qvv
 lve
@@ -126538,7 +126775,7 @@ dfb
 hpz
 lqL
 dyF
-mrc
+ati
 pDI
 hBZ
 fRN
@@ -126700,7 +126937,7 @@ dfb
 aai
 lqL
 dyF
-mrc
+ati
 nEJ
 ped
 nwo
@@ -130586,9 +130823,9 @@ taQ
 xMw
 xMw
 xMw
-atT
-atT
-atT
+wQx
+wQx
+wQx
 xMw
 xMw
 xMw
@@ -131155,7 +131392,7 @@ riW
 adu
 aHE
 jss
-bMQ
+aDO
 bhs
 acK
 aoQ
@@ -131479,7 +131716,7 @@ riW
 qMD
 ahu
 alm
-bMQ
+aDO
 bjb
 chp
 cMy
@@ -131638,9 +131875,9 @@ arr
 arq
 arq
 riW
-afa
-afa
-afa
+aEb
+aEb
+aEb
 wML
 bld
 bLx
@@ -131803,7 +132040,7 @@ riW
 aep
 aHE
 jss
-bMQ
+aDO
 rKn
 rGL
 avj
@@ -131879,7 +132116,7 @@ vAe
 vmL
 wNw
 hMg
-wQx
+atT
 uff
 aue
 tBJ
@@ -131997,9 +132234,9 @@ kny
 xeE
 vZy
 kny
-kDU
-kDU
-kDU
+aBC
+aBC
+aBC
 kny
 kny
 anN
@@ -132127,7 +132364,7 @@ riW
 afj
 ahu
 alm
-bMQ
+aDO
 bmc
 wTO
 lqR
@@ -132203,7 +132440,7 @@ vAe
 vmL
 wNw
 hMg
-wQx
+atT
 sXy
 auf
 hhl
@@ -132365,7 +132602,7 @@ kIU
 aAw
 amz
 hMg
-wQx
+atT
 ekk
 aug
 tBJ
@@ -132527,7 +132764,7 @@ jMl
 pHz
 wNw
 hMg
-wQx
+atT
 bLc
 ali
 eHx
@@ -133150,7 +133387,7 @@ wAE
 oUQ
 oYd
 lFi
-xTg
+aIK
 rhE
 rhE
 rhE
@@ -133162,7 +133399,7 @@ rhE
 rhE
 rhE
 rhE
-cBd
+aHP
 iER
 vHt
 lBa
@@ -133337,7 +133574,7 @@ aAA
 jvm
 aAv
 cgm
-qQS
+axn
 bOX
 hJK
 wRM
@@ -133661,7 +133898,7 @@ aAB
 vmL
 wNw
 cgm
-qQS
+axn
 hOP
 uoy
 kku
@@ -134120,8 +134357,8 @@ tTq
 aAo
 qGT
 oWl
-vcZ
-lFi
+aJI
+aJC
 uAf
 rhE
 rhE
@@ -134135,7 +134372,7 @@ rhE
 rhE
 rhE
 lMp
-iER
+aHn
 vze
 hvz
 sQM
@@ -134284,7 +134521,7 @@ axq
 djp
 vcZ
 lFi
-xTg
+aIL
 rhE
 rhE
 rhE
@@ -134296,8 +134533,8 @@ rhE
 rhE
 rhE
 rhE
-cBd
-iER
+aHV
+aHq
 vze
 aBf
 aBe
@@ -134945,7 +135182,7 @@ rhE
 rhE
 rhE
 apw
-iER
+aHq
 vze
 hvz
 xKG
@@ -135084,8 +135321,8 @@ ohm
 gCc
 aoR
 wkX
-iTd
-iTd
+aBu
+aBu
 wkX
 oek
 bfD
@@ -135093,8 +135330,8 @@ tnI
 qGT
 hqd
 aWb
-iCQ
-euQ
+aJE
+uAf
 rhE
 rhE
 rhE
@@ -135107,7 +135344,7 @@ rhE
 rhE
 rhE
 hro
-iER
+aHv
 vze
 hvz
 xKG
@@ -135269,7 +135506,7 @@ rhE
 rhE
 rhE
 iQw
-hGQ
+aHy
 vze
 bgb
 xKG
@@ -135431,7 +135668,7 @@ rhE
 aeB
 rhE
 uPZ
-dsz
+aHC
 wsZ
 cXJ
 rQa
@@ -135593,7 +135830,7 @@ rhE
 rhE
 rhE
 lLi
-iER
+aHq
 tSU
 vmg
 bOK
@@ -135755,7 +135992,7 @@ rhE
 rhE
 rhE
 cBd
-iER
+aHq
 tSU
 jEv
 seG
@@ -135917,7 +136154,7 @@ rhE
 rhE
 rhE
 cBd
-iER
+aHq
 tSU
 pVu
 gEv
@@ -136066,7 +136303,7 @@ gVl
 djp
 dSR
 apD
-xTg
+aIK
 rhE
 rhE
 rhE
@@ -136079,7 +136316,7 @@ rhE
 rhE
 rhE
 cBd
-iER
+aHq
 tSU
 dlY
 gEv
@@ -136240,8 +136477,8 @@ rhE
 rhE
 rhE
 rhE
-cBd
-iER
+aHP
+aHq
 tSU
 tDj
 laG
@@ -136403,7 +136640,7 @@ rhE
 aoX
 rhE
 cBd
-iER
+aHq
 tSU
 tDj
 euf
@@ -136565,7 +136802,7 @@ hVH
 ofQ
 ofQ
 kMt
-iER
+aHq
 tSU
 tDj
 giN
@@ -137051,7 +137288,7 @@ eIO
 eIO
 eIO
 gBN
-rby
+imR
 gpq
 imR
 ieZ
@@ -137213,7 +137450,7 @@ rMl
 qBK
 pTz
 dSG
-rsn
+cax
 aVV
 jIf
 xKE
@@ -141758,7 +141995,7 @@ jfF
 pbd
 pbd
 pbd
-bLa
+fsa
 fHN
 fHN
 dKo
@@ -141921,7 +142158,7 @@ reg
 miz
 mSl
 qMp
-bLa
+fsa
 fHN
 dKo
 dKo
@@ -142076,7 +142313,7 @@ aHR
 eDS
 lwo
 aHR
-aRL
+jfF
 xej
 reg
 oUz
@@ -142238,7 +142475,7 @@ aqw
 aqw
 oHc
 aqx
-pHQ
+aFu
 reg
 oUz
 tUd
@@ -143042,7 +143279,7 @@ pEf
 hAu
 tOK
 bej
-bej
+ayJ
 vgJ
 beu
 beq
@@ -143204,7 +143441,7 @@ bfi
 beZ
 rSS
 hrS
-bej
+ayJ
 beB
 bev
 bfF
@@ -143528,7 +143765,7 @@ ujR
 gom
 oDb
 oFm
-bej
+ayJ
 iGL
 cwO
 ber
@@ -143659,9 +143896,9 @@ aTb
 aTi
 aTi
 pOb
-xRy
+aBL
 agz
-xRy
+aBL
 nqB
 bJY
 mpI
@@ -144982,7 +145219,7 @@ lcp
 alQ
 oQV
 alV
-icN
+aBq
 icN
 hhM
 oFm
@@ -148938,7 +149175,7 @@ aiU
 aiU
 aiU
 aiU
-tvL
+aiU
 aiU
 aiU
 aiU
