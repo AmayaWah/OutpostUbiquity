@@ -25,7 +25,7 @@
 			piece = capitalize_utf(piece)
 
 		if(always_stars)
-			piece = stars(piece, clamp( 100 - always_stars, 5, 100) ) // Outpost 21 edit begin - haunted areas cause compression, pass through compression from messages
+			piece = stars(piece)
 		else if(!say_understands(speaker, SP.speaking))
 			if(SP.speaking.flags & INAUDIBLE)
 				piece = ""
@@ -63,13 +63,11 @@
 		return stars(SP.message)
 
 /mob/proc/hear_say(list/message_pieces, verb = "says", italics = 0, mob/speaker = null, sound/speech_sound, sound_vol)
-	SEND_SIGNAL(src, COMSIG_MOB_HEAR_SAY, message_pieces, verb, italics, speaker, speech_sound, sound_vol) // Outpost 21 edit(port) - Mob hear signal
-
+	SEND_SIGNAL(src, COMSIG_MOB_HEAR_SAY, message_pieces, verb, italics, speaker, speech_sound, sound_vol)
 	if(!client && !teleop)
 		return FALSE
 
-	var/admin_hears_all = client?.holder?.hear_all_speech // OutpostUbiquity edit: hears everything, even clientless speakers and in vacuum
-	if(isobserver(src) && !admin_hears_all && client?.prefs?.read_preference(/datum/preference/toggle/ghost_ears))
+	if(isobserver(src) && client?.prefs?.read_preference(/datum/preference/toggle/ghost_ears))
 		if(speaker && !speaker.client && !(speaker in view(src)))
 			//Does the speaker have a client?  It's either random stuff that observers won't care about (Experiment 97B says, 'EHEHEHEHEHEHEHE')
 			//Or someone snoring.  So we make it where they won't hear it.
@@ -77,7 +75,7 @@
 
 	//make sure the air can transmit speech - hearer's side
 	var/turf/T = get_turf(src)
-	if(T && !isobserver(src) && !admin_hears_all) //Ghosts can hear even in vacuum.
+	if(T && !isobserver(src)) //Ghosts can hear even in vacuum.
 		var/datum/gas_mixture/environment = T.return_air()
 		var/pressure = environment ? environment.return_pressure() : 0
 		if(pressure < SOUND_MINIMUM_PRESSURE && get_dist(speaker, src) > 1)
@@ -196,14 +194,10 @@
 	return tagged_message
 
 /mob/proc/hear_radio(list/message_pieces, verb = "says", part_a, part_b, part_c, part_d, part_e, mob/speaker = null, hard_to_hear = 0, vname = "")
-	SEND_SIGNAL(src, COMSIG_MOB_HEAR_SAY, message_pieces, verb, FALSE, speaker, null, 0) // Outpost 21 edit(port) - Mob hear signal
+	SEND_SIGNAL(src, COMSIG_MOB_HEAR_SAY, message_pieces, verb, FALSE, speaker, null, 0)
 
 	if(!client)
 		return
-
-	// Outpost 21 edit(port) begin - Translators hear through radios
-	translator_proxy_hear(message_pieces,verb,speaker)
-	// Outpost 21 edit end
 
 	var/list/combined = combine_message(message_pieces, verb, speaker, always_stars = hard_to_hear, radio = TRUE)
 	var/message = combined["formatted"]

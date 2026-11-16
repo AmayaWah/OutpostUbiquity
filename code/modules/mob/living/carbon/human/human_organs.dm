@@ -49,7 +49,7 @@
 
 			if (!lying && !buckled && world.time - l_move_time < 15)
 			//Moving around with fractured ribs won't do you any good
-				if (prob(10) && !stat && can_feel_pain() && chem_effects[CE_PAINKILLER] < 50 && E.is_broken() && E.internal_organs.len && !src.client?.prefs?.read_preference(/datum/preference/toggle/hide_pain_scream)) // Outpost 21 edit - Hide automatic pain scream
+				if (prob(10) && !stat && can_feel_pain() && chem_effects[CE_PAINKILLER] < 50 && E.is_broken() && E.internal_organs.len)
 					custom_pain("Pain jolts through your broken [E.encased ? E.encased : E.name], staggering you!", 50)
 					emote("scream")
 					drop_item(loc)
@@ -73,8 +73,8 @@
 	if (istype(buckled, /obj/structure/bed))
 		return
 
-	if(SEND_SIGNAL(src, COMSIG_EXTERNAL_ORGAN_STANCE_DAMAGE_APPLICATION) & COMPONENT_CANCEL_EXTERNAL_ORGAN_DAMAGE) // Outpost 21 edit(port) - stance damage doesn't affect godmode
-		return // If the signal returns, we don't apply damage, it's done its own special thing.
+	if(SEND_SIGNAL(src, COMSIG_EXTERNAL_ORGAN_STANCE_DAMAGE_APPLICATION) & COMPONENT_CANCEL_EXTERNAL_ORGAN_DAMAGE)
+		return
 
 	var/limb_pain = FALSE
 	for(var/limb_tag in list(BP_L_LEG,BP_R_LEG,BP_L_FOOT,BP_R_FOOT))
@@ -113,7 +113,7 @@
 		stance_damage -= 4
 
 	// standing is poor
-	if(stance_damage >= 4 || (stance_damage >= 2 && prob(1))) // Outpost 21 edit(port) - Probability to 1 from 5
+	if(stance_damage >= 4 || (stance_damage >= 2 && prob(5)))
 		if(!(lying || resting) && !isbelly(loc))
 			if(limb_pain)
 				emote("scream")
@@ -125,8 +125,8 @@
 	if(!l_hand && !r_hand)
 		return
 
-	if(SEND_SIGNAL(src, COMSIG_EXTERNAL_ORGAN_GRASP_DAMAGE_APPLICATION) & COMPONENT_CANCEL_EXTERNAL_ORGAN_DAMAGE) // Outpost 21 edit(port) - grasp damage doesn't affect godmode
-		return // If the signal returns, we don't apply damage, it's done its own special thing.
+	if(SEND_SIGNAL(src, COMSIG_EXTERNAL_ORGAN_GRASP_DAMAGE_APPLICATION) & COMPONENT_CANCEL_EXTERNAL_ORGAN_DAMAGE)
+		return
 
 	// You should not be able to pick anything up, but stranger things have happened.
 	if(l_hand)
@@ -167,7 +167,7 @@
 			if(!isbelly(loc))
 				var/emote_scream = pick("screams in pain and ", "lets out a sharp cry and ", "cries out and ")
 				automatic_custom_emote(VISIBLE_MESSAGE, "[(can_feel_pain()) ? "" : emote_scream ]drops what they were holding in their [E.name]!", check_stat = TRUE)
-				if(can_feel_pain() && !src.client?.prefs?.read_preference(/datum/preference/toggle/hide_pain_scream)) // Outpost 21 edit - Hide automatic pain scream
+				if(can_feel_pain())
 					emote("pain")
 
 		else if(E.is_malfunctioning())
