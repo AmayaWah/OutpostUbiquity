@@ -241,7 +241,6 @@
 		// "zipties",
 		// "seclite",
 		// "electropack",
-		//CHOMPEnable Start
 		"bodycam_monitor",
 		//CHOMPEnable End
 		"metal_detector", // Outpost 21 edit - Thread detector
