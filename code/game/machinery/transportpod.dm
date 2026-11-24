@@ -1,4 +1,3 @@
-/// Outpost 21 edit(port) begin - Update transport pods
 /obj/machinery/transportpod
 	name = "Ballistic Transportation Pod"
 	desc = "A fast transit ballistic pod used to get from one place to the next. Batteries not included!"
@@ -226,4 +225,3 @@
 		icon_state = "pod"
 	else
 		icon_state = "pod_open"
-/// Outpost 21 edit(port) end
